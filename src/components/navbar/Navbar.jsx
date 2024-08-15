@@ -4,6 +4,9 @@ import { CalendarIcon, HomeIcon, icons, MailIcon, PencilIcon } from 'lucide-reac
 import { FaWhatsapp } from 'react-icons/fa';
 import { TbMassage } from "react-icons/tb";
 
+import {useTranslations} from 'next-intl';
+
+
 
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
@@ -26,14 +29,16 @@ const Icons = {
 
 const DATA = {
     navbar: [
-        { href: '#', icon: HomeIcon, label: 'Home' },
-        { href: '#', icon: Icons.services, label: 'Services' },
-        { href: '#', icon: Icons.contact, label: 'Contact' },
-        { href: '#', icon: PencilIcon, label: 'Blog' },
+        { href: '#', icon: HomeIcon, label: 'home' },
+        { href: '#', icon: Icons.services, label: 'services' },
+        { href: '#', icon: Icons.contact, label: 'contact' },
+        { href: '#', icon: PencilIcon, label: 'blog' },
     ],
 };
 
 function Navbar() {
+    const t = useTranslations('navbar');
+
     return (
         <div className="relative">
             <TooltipProvider>
@@ -56,7 +61,7 @@ function Navbar() {
                                     </Link>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                    <p>{item.label}</p>
+                                    <p>{t(item.label)}</p>
                                 </TooltipContent>
                             </Tooltip>
                         </DockIcon>
