@@ -4,5 +4,28 @@
         "contact": "Contact",
         "services": "Services",
         "blog": "Blog"
+    },
+    "hero": {
+        "title":  "Dr. Francesco Luise",
+        "description": "Physiotherapist"
+    },
+    "services": {
+        "title": "Services",
+        "button": "View All",
+        "pills": {
+            "assistance": {
+                "title": "Continuous Assistance",
+                "description": "Continuous assistance is an integral part of my approach aimed at treating the whole body, not just the isolated problem. This service is essential to ensuring my patients' long-term health and well-being."
+            },
+            "therapy": {
+                "title": "Treatment and Therapy",
+                "description": "I strive to understand the root of your problem to provide you with the most effective treatment. Over the years, I have found that treatment and therapy are fundamental elements in the recovery process."
+            },
+            "health": {
+                "title": "Assessment and Diagnosis",
+                "description": "I listen to your story and create a detailed file. I then develop a personalized treatment plan that includes assessment and diagnosis, aimed at achieving the functional results we have set together."
+            }
+        }
+        
     }
 }

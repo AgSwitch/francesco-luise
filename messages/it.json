@@ -1,8 +1,31 @@
 {
     "navbar": {
         "home": "Home",
-        "contact": "Contatti",
+        "contact": "Contatto",
         "services": "Servizi",
         "blog": "Blog"
+    },
+    "hero": {
+        "title":  "Dott. Francesco Luise",
+        "description": "Fisioterapista"
+    },
+    "services": {
+        "title": "Servizi",
+        "button": "Scopri di più",
+        "pills": {
+            "assistance": {
+                "title": "Assistenza continua",
+                "description": "L'assistenza continua è parte integrante del mio approccio volto al trattamento di tutto il corpo, e non solo del problema isolato. Questo servizio è fondamentale per assicurare ai miei pazienti salute e benessere duraturi."
+            },
+            "therapy": {
+                "title": "Trattamento e terapia",
+                "description": "Cerco di capire la radice del tuo problema, per poterti fornire il trattamento più efficiente. Negli anni, ho scoperto che il trattamento e la terapia sono elementi fondamentali nel processo di recupero."
+            },
+            "health": {
+                "title": "Valutazione e diagnosi",
+                "description": "Ascolto la tua storia e creo una cartella dettagliata. Elaboro poi un piano di trattamento personalizzato che includa la valutazione e la diagnosi, volto a ottenere i risultati funzionali che ci siamo posti insieme."
+            }
+        }
+        
     }
 }
