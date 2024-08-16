@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
     return (
-        <div className="relative flex items-end  justify-center md:justify-start md:items-center h-screen w-screen bg-background md:pl-12">
+        <div id="home" className="relative flex items-end  justify-center md:justify-start md:items-center h-screen w-screen bg-background md:pl-12">
             <div className="w-full lg:hidden h-full bg-background opacity-60 absolute left-0 z-30 "></div>
             <div className="relative flex flex-col items-center gap-2 md:gap-5 z-40 mb-[100px] md:mb-0">
                 <Image

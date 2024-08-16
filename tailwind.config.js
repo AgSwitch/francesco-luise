@@ -23,7 +23,7 @@ module.exports = {
         secondary: '#4ECDC4',
         onsecondary: '#1A202C',
         background: '#FFFFFF',
-        onbackground: '#1A202C',
+        onbackground: '#87CEEB',
       },
       keyframes: {
         "accordion-down": {

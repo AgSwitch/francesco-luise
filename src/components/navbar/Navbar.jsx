@@ -36,13 +36,13 @@ const Icons = {
 function Navbar({ lng }) {
     const DATA = {
         navbar: [
-            { href: `#`, icon: HomeIcon, label: 'home' },
+            { href: `/${lng}#home`, icon: HomeIcon, label: 'home' },
             {
-                href: `#`,
+                href: `/${lng}#services`,
                 icon: Icons.services,
                 label: 'services',
             },
-            { href: `#`, icon: Icons.contact, label: 'contact' },
+            { href: `/${lng}#contact`, icon: Icons.contact, label: 'contact' },
         ],
         pages: [{ href: `/${lng}/blog`, icon: PencilIcon, label: 'blog' }],
     };
