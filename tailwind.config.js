@@ -22,7 +22,7 @@ module.exports = {
         onprimary: '#1A202C',
         secondary: '#4ECDC4',
         onsecondary: '#1A202C',
-        background: '#F7FFF6',
+        background: '#FFFFFF',
         onbackground: '#1A202C',
       },
       keyframes: {
