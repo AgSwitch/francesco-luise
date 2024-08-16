@@ -4,7 +4,10 @@ import { CalendarIcon, HomeIcon, icons, MailIcon, PencilIcon } from 'lucide-reac
 import { FaWhatsapp } from 'react-icons/fa';
 import { TbMassage } from "react-icons/tb";
 
+//I18n
 import {useTranslations} from 'next-intl';
+import { getLocale } from "next-intl/server";
+
 
 
 
@@ -27,16 +30,18 @@ const Icons = {
     services: (props) => <TbMassage {...props} />,
 };
 
-const DATA = {
-    navbar: [
-        { href: '#', icon: HomeIcon, label: 'home' },
-        { href: '#', icon: Icons.services, label: 'services' },
-        { href: '#', icon: Icons.contact, label: 'contact' },
-        { href: '#', icon: PencilIcon, label: 'blog' },
-    ],
-};
 
-function Navbar() {
+
+function Navbar({ lng }) {
+
+    const DATA = {
+        navbar: [
+            { href: `/${lng}/`, icon: HomeIcon, label: 'home' },
+            { href: `/${lng}/services`, icon: Icons.services, label: 'services' },
+            { href: `/${lng}/contact`, icon: Icons.contact, label: 'contact' },
+            { href: '#', icon: PencilIcon, label: 'blog' },
+        ],
+    };
     const t = useTranslations('navbar');
 
     return (
