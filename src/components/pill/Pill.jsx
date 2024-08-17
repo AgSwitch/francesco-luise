@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function ServicePill({
+function Pill({
   description,
   title,
   Icon,
@@ -29,3 +29,5 @@ export function ServicePill({
     </>
   );
 }
+
+export default Pill;

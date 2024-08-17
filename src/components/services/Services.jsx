@@ -2,10 +2,9 @@ import { useTranslations } from "next-intl";
 import { CiMedicalClipboard } from "react-icons/ci";
 import { IoBarbellOutline } from "react-icons/io5";
 import { TbMassage } from "react-icons/tb";
-
-const { Button } = require("@/components/ui/button");
-const { ServicePill } = require("./ServicePill");
-const { default: Link } = require("next/link");
+import { Button } from "@/components/ui/button";
+import Pill from "../pill/Pill";
+import Link from "next/link";
 
 function Services({lng}) {
     const t = useTranslations("services");
@@ -17,17 +16,17 @@ function Services({lng}) {
       >
         <h3 className="text-6xl font-bold">{t("title")}</h3>
         <div className="grid lg:grid-cols-3 px-8 lg:px-20 gap-8">
-          <ServicePill
+          <Pill
             title={t("pills.assistance.title")}
             Icon={CiMedicalClipboard}
             description={t("pills.assistance.description")}
           />
-          <ServicePill
+          <Pill
             title={t("pills.therapy.title")}
             Icon={IoBarbellOutline}
             description={t("pills.therapy.description")}
           />
-          <ServicePill
+          <Pill
             title={t("pills.health.title")}
             Icon={TbMassage}
             description={t("pills.health.description")}

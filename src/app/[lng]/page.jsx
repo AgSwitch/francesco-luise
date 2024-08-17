@@ -4,15 +4,11 @@ import Services from "../../components/services/Services";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { CustomForm } from "@/components/form/form";
-import {
-  ContactUsFormFields,
-  ContactUsFormSchema,
-} from "@/components/form/formData";
 import Hero from "@/components/hero/Hero";
-import { ServicePill } from "@/components/services/ServicePill";
 import { contacts } from "@/data/info";
 import { Separator } from "@radix-ui/react-separator";
 import { IoLogoWhatsapp, IoMdPin } from "react-icons/io";
+import Pill from "@/components/pill/Pill";
 
 function Page({ params: { lng } }) {
   const t = useTranslations("contacts");
@@ -27,21 +23,21 @@ function Page({ params: { lng } }) {
       >
         <h3 className="text-6xl font-bold">{t('title')}</h3>
         <div className="grid md:grid-cols-2 mx-auto gap-8 px-8">
-          <ServicePill
+          <Pill
             title={"Call Me"}
             description={contacts.phone}
             Icon={FaPhone}
             className={"bg-secondary w-full"}
             link={{ target: "_blank", action: "tel:", href: contacts.phone }}
           />
-          <ServicePill
+          <Pill
             title={"Email Me"}
             description={contacts.email}
             Icon={MdEmail}
             className={"bg-secondary w-full"}
             link={{ target: "_blank", action: "mailto:", href: contacts.email }}
           />
-          <ServicePill
+          <Pill
             title={"Whatsapp Me"}
             description={contacts.phone}
             Icon={IoLogoWhatsapp}
@@ -52,7 +48,7 @@ function Page({ params: { lng } }) {
               href: contacts.whatsapp + t("whatsapp"),
             }}
           />
-          <ServicePill
+          <Pill
             title={"Find Me"}
             description={contacts.address}
             Icon={IoMdPin}
