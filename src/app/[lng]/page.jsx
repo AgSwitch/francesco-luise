@@ -1,3 +1,4 @@
+'use client';
 import { useTranslations } from "next-intl";
 import Services from "../../components/services/Services";
 import { FaPhone } from "react-icons/fa";

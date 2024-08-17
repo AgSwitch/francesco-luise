@@ -1,5 +1,7 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+
 import {
     CalendarIcon,
     HomeIcon,
@@ -24,6 +26,9 @@ import {
     TooltipTrigger,
 } from '@/components/ui/tooltip';
 import { Dock, DockIcon } from '@/components/magicui/dock';
+import { availabelanguages } from '../../../global/languages';
+import { useRouter } from 'next/router';
+import NavbarDropdow from './NavbarDropdown';
 //import { ModeToggle } from "@/components/mode-toggle";
 
 const Icons = {
@@ -32,7 +37,6 @@ const Icons = {
     whatsapp: (props) => <FaWhatsapp {...props} />,
     services: (props) => <TbMassage {...props} />,
 };
-
 function Navbar({ lng }) {
     const DATA = {
         navbar: [
@@ -47,60 +51,77 @@ function Navbar({ lng }) {
         pages: [{ href: `/${lng}/blog`, icon: PencilIcon, label: 'blog' }],
     };
     const t = useTranslations('navbar');
+    const [open, setOpen] = useState(false);
 
     return (
         <div className="fixed top-0 z-50 left-1/2 -translate-x-1/2">
-            <TooltipProvider>
-                <Dock direction="middle">
-                    {DATA.navbar.map((item, index) => (
-                        <DockIcon key={item.label}>
+            <div className="flex gap-4">
+                <TooltipProvider>
+                    <Dock direction="middle">
+                        {DATA.navbar.map((item, index) => (
+                            <DockIcon key={item.label}>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Link
+                                            href={item.href}
+                                            className={cn(
+                                                buttonVariants({
+                                                    variant: 'ghost',
+                                                    size: 'icon',
+                                                }),
+                                                'size-12 rounded-full',
+                                            )}
+                                        >
+                                            <item.icon className="size-4" />
+                                        </Link>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>{t(item.label)}</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </DockIcon>
+                        ))}
+                        <Separator
+                            orientation="vertical"
+                            className="h-full py-2"
+                        />
+                        {DATA.pages.map((item, index) => (
+                            <DockIcon key={item.label}>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Link
+                                            href={item.href}
+                                            className={cn(
+                                                buttonVariants({
+                                                    variant: 'ghost',
+                                                    size: 'icon',
+                                                }),
+                                                'size-12 rounded-full',
+                                            )}
+                                        >
+                                            <item.icon className="size-4" />
+                                        </Link>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>{t(item.label)}</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </DockIcon>
+                        ))}
+                    </Dock>
+                </TooltipProvider>
+                <TooltipProvider>
+                    <Dock className={'rounded-full'} direction="middle">
+                        <DockIcon className={``}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
-                                    <Link
-                                        href={item.href}
-                                        className={cn(
-                                            buttonVariants({
-                                                variant: 'ghost',
-                                                size: 'icon',
-                                            }),
-                                            'size-12 rounded-full',
-                                        )}
-                                    >
-                                        <item.icon className="size-4" />
-                                    </Link>
+                                    <NavbarDropdow lng={lng} />
                                 </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>{t(item.label)}</p>
-                                </TooltipContent>
                             </Tooltip>
                         </DockIcon>
-                    ))}
-                    <Separator orientation="vertical" className="h-full py-2" />
-                    {DATA.pages.map((item, index) => (
-                        <DockIcon key={item.label}>
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <Link
-                                        href={item.href}
-                                        className={cn(
-                                            buttonVariants({
-                                                variant: 'ghost',
-                                                size: 'icon',
-                                            }),
-                                            'size-12 rounded-full',
-                                        )}
-                                    >
-                                        <item.icon className="size-4" />
-                                    </Link>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>{t(item.label)}</p>
-                                </TooltipContent>
-                            </Tooltip>
-                        </DockIcon>
-                    ))}
-                </Dock>
-            </TooltipProvider>
+                    </Dock>
+                </TooltipProvider>
+            </div>
         </div>
     );
 }
