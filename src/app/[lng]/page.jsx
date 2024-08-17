@@ -11,6 +11,7 @@ import Hero from "@/components/hero/Hero";
 import { ServicePill } from "@/components/services/ServicePill";
 import { contacts } from "@/data/info";
 import { Separator } from "@radix-ui/react-separator";
+import { IoLogoWhatsapp, IoMdPin } from "react-icons/io";
 
 function Page({ params: { lng } }) {
   const t = useTranslations("services");
@@ -20,11 +21,11 @@ function Page({ params: { lng } }) {
       <Hero />
       <Services lng={lng} />
       <div
-        id="services"
+        id="contact"
         className=" min-h-screen py-20 flex flex-col items-center justify-center gap-10"
       >
         <h3 className="text-6xl font-bold">Contatti</h3>
-        <div className="grid md:grid-cols-2 max-w-2xl mx-auto gap-8">
+        <div className="grid md:grid-cols-2 mx-auto gap-8">
           <ServicePill
             title={"Call Me"}
             description={contacts.phone}
@@ -39,14 +40,41 @@ function Page({ params: { lng } }) {
             className={"bg-secondary w-full"}
             link={{ target: "_blank", action: "mailto:", href: contacts.email }}
           />
+          <ServicePill
+            title={"Whatsapp Me"}
+            description={contacts.phone}
+            Icon={IoLogoWhatsapp}
+            className={"bg-secondary w-full"}
+            link={{
+              target: "_blank",
+              action: "",
+              href: contacts.whatsapp + t("whatsapp"),
+            }}
+          />
+          <ServicePill
+            title={"Find Me"}
+            description={contacts.address}
+            Icon={IoMdPin}
+            className={"bg-secondary w-full"}
+            link={{
+              target: "_blank",
+              action: contacts.location,
+              href: contacts.location,
+            }}
+          />
         </div>
-    
-    <div className="flex items-center gap-6">
-    <Separator orientation="horizontal" className="bg-primary h-[2px] w-10" />
-    <h4>OR</h4>
-    <Separator orientation="horizontal" className="bg-primary h-[2px] w-10" />
 
-    </div>
+        <div className="flex items-center gap-6">
+          <Separator
+            orientation="horizontal"
+            className="bg-primary h-[2px] w-10"
+          />
+          <h4>OR</h4>
+          <Separator
+            orientation="horizontal"
+            className="bg-primary h-[2px] w-10"
+          />
+        </div>
 
         <CustomForm className={"w-full max-w-2xl"} />
       </div>

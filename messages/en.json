@@ -25,7 +25,8 @@
                 "title": "Assessment and Diagnosis",
                 "description": "I listen to your story and create a detailed file. I then develop a personalized treatment plan that includes assessment and diagnosis, aimed at achieving the functional results we have set together."
             }
-        }
+        },
+        "whatsapp": "I'm banana solo Ema?"
     },
     "contacts": {
         "title": "Contact",
@@ -47,9 +48,6 @@
                 "label": "Message",
                 "error": "Please enter your message"
             }
-        },
-        "zod": {
-
         }
     }
 }
