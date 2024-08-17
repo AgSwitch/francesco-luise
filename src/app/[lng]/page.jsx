@@ -15,7 +15,7 @@ import { Separator } from "@radix-ui/react-separator";
 import { IoLogoWhatsapp, IoMdPin } from "react-icons/io";
 
 function Page({ params: { lng } }) {
-  const t = useTranslations("services");
+  const t = useTranslations("contacts");
 
   return (
     <div>
@@ -25,8 +25,8 @@ function Page({ params: { lng } }) {
         id="contact"
         className=" min-h-screen py-20 flex flex-col items-center justify-center gap-10"
       >
-        <h3 className="text-6xl font-bold">Contatti</h3>
-        <div className="grid md:grid-cols-2 mx-auto gap-8">
+        <h3 className="text-6xl font-bold">{t('title')}</h3>
+        <div className="grid md:grid-cols-2 mx-auto gap-8 px-8">
           <ServicePill
             title={"Call Me"}
             description={contacts.phone}
@@ -70,7 +70,7 @@ function Page({ params: { lng } }) {
             orientation="horizontal"
             className="bg-primary h-[2px] w-10"
           />
-          <h4>OR</h4>
+          <h4>{t('or').toUpperCase()}</h4>
           <Separator
             orientation="horizontal"
             className="bg-primary h-[2px] w-10"

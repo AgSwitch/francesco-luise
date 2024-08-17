@@ -29,8 +29,9 @@
         "whatsapp": "I'm banana solo Ema?"
     },
     "contacts": {
-        "title": "Contact",
+        "title": "Contacts",
         "button": "Submit",
+        "or": "or",
         "form": {
             "name": {
                 "label": "Name",
