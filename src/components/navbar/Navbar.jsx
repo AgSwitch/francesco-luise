@@ -3,22 +3,22 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import {
-    CalendarIcon,
-    HomeIcon,
-    icons,
-    MailIcon,
-    PencilIcon,
-} from 'lucide-react';
-import { FaWhatsapp } from 'react-icons/fa';
-import { TbMassage } from 'react-icons/tb';
+  CalendarIcon,
+  HomeIcon,
+  icons,
+  MailIcon,
+  PencilIcon,
+} from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { TbMassage } from "react-icons/tb";
 
 //I18n
-import { useTranslations } from 'next-intl';
-import { getLocale } from 'next-intl/server';
+import { useTranslations } from "next-intl";
+import { getLocale } from "next-intl/server";
 
-import { cn } from '@/lib/utils';
-import { buttonVariants } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import {
     Tooltip,
     TooltipContent,
@@ -32,10 +32,10 @@ import NavbarDropdow from './NavbarDropdown';
 //import { ModeToggle } from "@/components/mode-toggle";
 
 const Icons = {
-    calendar: (props) => <CalendarIcon {...props} />,
-    contact: (props) => <MailIcon {...props} />,
-    whatsapp: (props) => <FaWhatsapp {...props} />,
-    services: (props) => <TbMassage {...props} />,
+  calendar: (props) => <CalendarIcon {...props} />,
+  contact: (props) => <MailIcon {...props} />,
+  whatsapp: (props) => <FaWhatsapp {...props} />,
+  services: (props) => <TbMassage {...props} />,
 };
 function Navbar({ lng }) {
     const DATA = {
