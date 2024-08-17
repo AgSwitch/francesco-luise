@@ -4,7 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { dir } from 'i18next';
 import '../globals.css';
 import { Lato } from 'next/font/google';
-import { availabelanguages } from '../../../global/languages';
+import { availableLanguages } from '../../../global/languages';
 
 
 const lato = Lato({
@@ -13,7 +13,7 @@ const lato = Lato({
 });
 
 export async function generateStaticParams() {
-    return availabelanguages.map((lng) => ({ lng }));
+    return availableLanguages.map((lng) => ({ lng }));
 }
 
 export default async function RootLayout({ children, params: { lng } }) {

@@ -26,10 +26,7 @@ import {
     TooltipTrigger,
 } from '@/components/ui/tooltip';
 import { Dock, DockIcon } from '@/components/magicui/dock';
-import { availabelanguages } from '../../../global/languages';
-import { useRouter } from 'next/router';
-import NavbarDropdow from './NavbarDropdown';
-//import { ModeToggle } from "@/components/mode-toggle";
+import NavbarDropdown from './NavbarDropdown';
 
 const Icons = {
   calendar: (props) => <CalendarIcon {...props} />,
@@ -115,7 +112,7 @@ function Navbar({ lng }) {
                         <DockIcon className={``}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
-                                    <NavbarDropdow lng={lng} />
+                                    <NavbarDropdown lng={lng} />
                                 </TooltipTrigger>
                             </Tooltip>
                         </DockIcon>

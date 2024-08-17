@@ -1,2 +1,2 @@
-export const availabelanguages = ['en', 'it'];
+export const availableLanguages = ['en', 'it'];
 
