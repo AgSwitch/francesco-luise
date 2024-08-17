@@ -4,8 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { dir } from 'i18next'
 import "../globals.css";
 import { Lato } from 'next/font/google';
-
-const languages = ['en', 'it'];
+import { languages } from '@/data/languages';
 
 const lato = Lato({
   weight: ['100', '300', '400', '700', '900'],
