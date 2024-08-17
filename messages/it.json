@@ -26,6 +26,27 @@
                 "description": "Ascolto la tua storia e creo una cartella dettagliata. Elaboro poi un piano di trattamento personalizzato che includa la valutazione e la diagnosi, volto a ottenere i risultati funzionali che ci siamo posti insieme."
             }
         }
-        
+    },
+    "contacts": {
+        "title": "Contatti",
+        "button": "Invia",
+        "form": {
+            "name": {
+                "label": "Nome",
+                "error": "Scrivi il tuo nome"
+            },
+            "email": {
+                "label": "Email",
+                "error": "Scrivi la tua email valida"
+            },
+            "phone": {
+                "label": "Telefono",
+                "error": "Scrivi il tuo numero di telefono valido"
+            },
+            "message": {
+                "label": "Messaggio",
+                "error": "Scrivi il tuo messaggio"
+            }
+        }
     }
 }

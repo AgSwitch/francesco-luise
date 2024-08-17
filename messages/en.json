@@ -26,6 +26,30 @@
                 "description": "I listen to your story and create a detailed file. I then develop a personalized treatment plan that includes assessment and diagnosis, aimed at achieving the functional results we have set together."
             }
         }
-        
+    },
+    "contacts": {
+        "title": "Contact",
+        "button": "Submit",
+        "form": {
+            "name": {
+                "label": "Name",
+                "error": "Name must be at least 2 characters."
+            },
+            "email": {
+                "label": "Email",
+                "error": "Please enter a valid email address"
+            },
+            "phone": {
+                "label": "Phone",
+                "error": "Please enter a valid phone number"
+            },
+            "message": {
+                "label": "Message",
+                "error": "Please enter your message"
+            }
+        },
+        "zod": {
+
+        }
     }
 }

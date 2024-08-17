@@ -18,12 +18,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#FF6363',
+        primary: '#0f172a',
         onprimary: '#1A202C',
-        secondary: '#4ECDC4',
+        secondary: '#f3f4f6',
         onsecondary: '#1A202C',
         background: '#FFFFFF',
         onbackground: '#87CEEB',
+        error: 'red'
       },
       keyframes: {
         "accordion-down": {
