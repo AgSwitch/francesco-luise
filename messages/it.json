@@ -50,5 +50,9 @@
                 "error": "Scrivi il tuo messaggio"
             }
         }
+    },
+    "footer": {
+        "vat": "Partita IVA",
+        "register": "Albo"
     }
 }

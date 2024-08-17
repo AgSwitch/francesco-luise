@@ -5,6 +5,7 @@ import { dir } from 'i18next';
 import '../globals.css';
 import { Lato } from 'next/font/google';
 import { availableLanguages } from '../../../global/languages';
+import Footer from '@/components/footer/Footer';
 
 const lato = Lato({
     weight: ['100', '300', '400', '700', '900'],
@@ -22,10 +23,11 @@ export default async function RootLayout({ children, params: { lng } }) {
 
     return (
         <html lang={lng} dir={dir(lng)}>
-            <body className={lato.className}>
+            <body className={`${lato.className} text-primary`}>
                 <NextIntlClientProvider messages={messages}>
                     <Navbar lng={lng} />
                     {children}
+                    <Footer />
                 </NextIntlClientProvider>
             </body>
         </html>

@@ -50,5 +50,9 @@
                 "error": "Please enter your message"
             }
         }
+    },
+    "footer": {
+        "vat": "VAT Number",
+        "register": "Register"
     }
 }
