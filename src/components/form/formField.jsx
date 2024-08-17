@@ -55,13 +55,13 @@ function CustomFormField({
                 <Textarea
                   onFocus={handleFocus}
                   onBlurCapture={handleBlur}
-                  className="w-full p-2 pt-0 border bg-background border-gray-800 rounded-md focus:outline-none focus:ring-1 focus:white focus:border-transparent"
+                  className="w-full p-2 border bg-background border-gray-800 rounded-md focus:outline-none focus:ring-1 focus:white focus:border-transparent"
                   {...field}
                 />
               ) : (
                 <Input
                   type={type}
-                  className="w-full p-2 pt-0 border bg-background border-gray-800 rounded-md focus:outline-none focus:ring-1 focus:white focus:border-transparent"
+                  className="w-full p-2 border bg-background border-gray-800 rounded-md focus:outline-none focus:ring-1 focus:white focus:border-transparent"
                   placeholder={placeHolder}
                   {...field}
                   onFocus={handleFocus}
