@@ -26,13 +26,13 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex-1 flex justify-center gap-5'>
-                    <Link  href={'#'}>
+                    <Link  href={contacts.whatsapp} target='_blank'>
                         <IoLogoWhatsapp  className='w-12 h-12'/>
                     </Link>
-                    <Link href={'#'}>
+                    <Link href={'#'} target='_blank'>
                         <AiFillInstagram className='w-12 h-12'/>
                     </Link>
-                    <Link href={'#'}>
+                    <Link href={contacts.linkedin} target='_blank'>
                         <FaLinkedin className='w-12 h-12'/>
                     </Link>
                 </div>
