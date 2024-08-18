@@ -5,7 +5,7 @@ import Logo from "../logo/Logo";
 const Hero = () => {
   const t = useTranslations("hero");
   return (
-    <div
+    <section
       id="home"
       className="relative flex items-end  justify-center md:justify-start md:items-center h-screen bg-background md:pl-12"
     >
@@ -21,7 +21,7 @@ const Hero = () => {
           height={650}
         />
       </div>
-    </div>
+    </section>
   );
 };
 export default Hero;

@@ -1,58 +1,80 @@
 {
-    "navbar": {
-        "home": "Home",
-        "contact": "Contatto",
-        "services": "Servizi",
-        "blog": "Blog"
+  "navbar": {
+    "home": "Home",
+    "contact": "Contatto",
+    "services": "Servizi",
+    "blog": "Blog",
+    "aboutme": "Chi sono"
+  },
+  "hero": {
+    "title": "Dott. Francesco Luise",
+    "description": "Fisioterapista"
+  },
+  "services": {
+    "title": "Servizi",
+    "button": "Scopri di più",
+    "pills": {
+      "assistance": {
+        "title": "Assistenza continua",
+        "description": "L'assistenza continua è parte integrante del mio approccio volto al trattamento di tutto il corpo, e non solo del problema isolato. Questo servizio è fondamentale per assicurare ai miei pazienti salute e benessere duraturi."
+      },
+      "therapy": {
+        "title": "Trattamento e terapia",
+        "description": "Cerco di capire la radice del tuo problema, per poterti fornire il trattamento più efficiente. Negli anni, ho scoperto che il trattamento e la terapia sono elementi fondamentali nel processo di recupero."
+      },
+      "health": {
+        "title": "Valutazione e diagnosi",
+        "description": "Ascolto la tua storia e creo una cartella dettagliata. Elaboro poi un piano di trattamento personalizzato che includa la valutazione e la diagnosi, volto a ottenere i risultati funzionali che ci siamo posti insieme."
+      }
     },
-    "hero": {
-        "title":  "Dott. Francesco Luise",
-        "description": "Fisioterapista"
-    },
-    "services": {
-        "title": "Servizi",
-        "button": "Scopri di più",
-        "pills": {
-            "assistance": {
-                "title": "Assistenza continua",
-                "description": "L'assistenza continua è parte integrante del mio approccio volto al trattamento di tutto il corpo, e non solo del problema isolato. Questo servizio è fondamentale per assicurare ai miei pazienti salute e benessere duraturi."
-            },
-            "therapy": {
-                "title": "Trattamento e terapia",
-                "description": "Cerco di capire la radice del tuo problema, per poterti fornire il trattamento più efficiente. Negli anni, ho scoperto che il trattamento e la terapia sono elementi fondamentali nel processo di recupero."
-            },
-            "health": {
-                "title": "Valutazione e diagnosi",
-                "description": "Ascolto la tua storia e creo una cartella dettagliata. Elaboro poi un piano di trattamento personalizzato che includa la valutazione e la diagnosi, volto a ottenere i risultati funzionali che ci siamo posti insieme."
-            }
-        },
-        "whatsapp": "Sono banana only Ema?"
-    },
-    "contacts": {
-        "title": "Contatti",
-        "button": "Invia",
-        "or": "o",
-        "form": {
-            "name": {
-                "label": "Nome",
-                "error": "Scrivi il tuo nome"
-            },
-            "email": {
-                "label": "Email",
-                "error": "Scrivi la tua email valida"
-            },
-            "phone": {
-                "label": "Telefono",
-                "error": "Scrivi il tuo numero di telefono valido"
-            },
-            "message": {
-                "label": "Messaggio",
-                "error": "Scrivi il tuo messaggio"
-            }
-        }
-    },
-    "footer": {
-        "vat": "Partita IVA",
-        "register": "Albo"
+    "whatsapp": "Sono banana only Ema?"
+  },
+  "aboutme": {
+    "title": "Chi sono",
+    "description": "Sono un dott. Luise Francesco, fisioterapista. Ho scoperto nel mio lavoro il modo migliore per trattare i miei pazienti, volto a garantire la salute e la benessere dei loro corpi.",
+    "education": {
+      "degree": {
+        "year": "2019",
+        "title": "Laurea in Fisioterapia",
+        "institution": "Università degli Studi di Padova"
+      },
+      "firstwork": {
+        "year": "2020",
+        "title": "Fisioterapista",
+        "institution": "Studi specializzati a Mogliano Veneto (TV) e Mestre (VE)"
+      },
+      "master": {
+        "year": "2022",
+        "title": "Master in Fisioterapia Sportiva",
+        "institution": "Università di Pisa"
+      }
     }
+  },
+  "contacts": {
+    "title": "Contatti",
+    "button": "Invia",
+    "or": "o",
+    "form": {
+      "name": {
+        "label": "Nome",
+        "error": "Scrivi il tuo nome"
+      },
+      "email": {
+        "label": "Email",
+        "error": "Scrivi la tua email valida"
+      },
+      "phone": {
+        "label": "Telefono",
+        "error": "Scrivi il tuo numero di telefono valido"
+      },
+      "message": {
+        "label": "Messaggio",
+        "error": "Scrivi il tuo messaggio"
+      }
+    }
+  },
+  "footer": {
+    "vat": "Partita IVA",
+    "register": "Albo"
+  }
 }

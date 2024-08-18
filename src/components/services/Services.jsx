@@ -10,7 +10,7 @@ function Services({lng}) {
     const t = useTranslations("services");
   
     return (
-      <div
+      <section
         id="services"
         className=" min-h-screen bg-secondary py-20 flex flex-col items-center justify-center gap-10"
       >
@@ -35,7 +35,7 @@ function Services({lng}) {
         <Button className="p-8 text-xl rounded-3xl">
           <Link href={`${lng}/services`}>{t("button")}</Link>
         </Button>
-      </div>
+      </section>
     );
   }
   

@@ -5,11 +5,11 @@ import Link from 'next/link';
 import {
   CalendarIcon,
   HomeIcon,
-  icons,
   MailIcon,
   PencilIcon,
 } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+
+import { FaRegUser, FaWhatsapp } from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 
 //I18n
@@ -33,6 +33,7 @@ const Icons = {
   contact: (props) => <MailIcon {...props} />,
   whatsapp: (props) => <FaWhatsapp {...props} />,
   services: (props) => <TbMassage {...props} />,
+  aboutMe: (props) => <FaRegUser {...props} />,
 };
 function Navbar({ lng }) {
     const DATA = {
@@ -43,6 +44,7 @@ function Navbar({ lng }) {
                 icon: Icons.services,
                 label: 'services',
             },
+            { href: `/${lng}#aboutme`, icon: Icons.aboutMe, label: 'aboutme' },
             { href: `/${lng}#contact`, icon: Icons.contact, label: 'contact' },
         ],
         pages: [{ href: `/${lng}/blog`, icon: PencilIcon, label: 'blog' }],
