@@ -6,6 +6,7 @@ import '../globals.css';
 import { Lato } from 'next/font/google';
 import { availableLanguages } from '../../../global/languages';
 import Footer from '@/components/footer/Footer';
+import CalendlyPopup from '@/components/calendly/CalendlyPopup';
 
 const lato = Lato({
     weight: ['100', '300', '400', '700', '900'],
@@ -28,6 +29,7 @@ export default async function RootLayout({ children, params: { lng } }) {
                     <Navbar lng={lng} />
                     {children}
                     <Footer />
+                    <CalendlyPopup lng={lng} />
                 </NextIntlClientProvider>
             </body>
         </html>

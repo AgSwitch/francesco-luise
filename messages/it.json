@@ -71,7 +71,11 @@
         "label": "Messaggio",
         "error": "Scrivi il tuo messaggio"
       }
-    }
+    },
+    "calendly": {
+              "title":"Prenota ora"
+            }
+        
   },
   "footer": {
     "vat": "Partita IVA",
