@@ -75,7 +75,9 @@
         },
         "calendly": {
               "title":"Book now"
-            }
+            },
+
+            "whatsapp":"I'm banana solo Ema?"
     },
     "footer": {
         "vat": "VAT Number",

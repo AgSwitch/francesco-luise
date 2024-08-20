@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl';
 const Footer = () => {
     const t = useTranslations('footer');
     return (
-        <div className='flex flex-col items-center bg-secondary p-20 pb-4 gap-14'>
+        <footer className='flex flex-col items-center bg-secondary p-20 pb-4 gap-14'>
             <div className="w-full flex-col  gap-12 md:flex-row flex justify-between items-center">
                 <div className='flex-1 mb-6'>
                     <Logo
@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="">
                 <p className='text-nowrap'>All rights reserved. Francesco Luise</p>
             </div>
-        </div>
+        </footer>
     );
 };
 export default Footer;
