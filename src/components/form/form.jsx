@@ -5,9 +5,9 @@ import { z } from 'zod';
 import { Form } from '../ui/form';
 
 import CustomFormField from './formField';
-import { Button } from '../ui/button';
 import { useForm } from 'react-hook-form';
 import { formFields, formSchema } from './formData';
+import CustomButton from '../customButton/CustomButton';
 
 export function CustomForm({ className }) {
     const defaultValues = {};
@@ -47,12 +47,12 @@ export function CustomForm({ className }) {
                             />
                         );
                     })}
-                    <Button
-                        className="p-8 text-xl rounded-3xl mx-auto col-span-2"
+                    <CustomButton
+                        className="text-xl rounded-3xl mx-auto col-span-2"
                         type="submit"
                     >
                         Submit
-                    </Button>
+                    </CustomButton>
                 </form>
             </Form>
         </div>
