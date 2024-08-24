@@ -37,7 +37,7 @@ function Pill({
       {type === "imagePill" && (
         <Link
           href={link.href}
-          className={`border-none bg-background rounded-3xl flex flex-col gap-2 h-full ${className} items-start relative rounded-3xl overflow-hidden h-[450px] md:h-96`}
+          className={`border-none bg-background rounded-3xl flex flex-col gap-2 md:h-full ${className} items-start relative rounded-3xl overflow-hidden h-[450px] md:h-96`}
         >
           <Image
             src={image}
