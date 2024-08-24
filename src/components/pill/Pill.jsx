@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
-import CustomButton from "../customButton/customButton";
 import { FaArrowRight, FaPlus } from "react-icons/fa";
 
 function Pill({

@@ -1,7 +1,4 @@
-import { Fa500Px } from "react-icons/fa";
 import Pill from "../pill/Pill";
-import CustomButton from "../customButton/CustomButton";
-import Link from "next/link";
 import CustomLink from "../customLink/CustomLink";
 import { useTranslations } from "next-intl";
 
