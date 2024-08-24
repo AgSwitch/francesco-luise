@@ -5,6 +5,7 @@ import { TbMassage } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
 import Pill from "../pill/Pill";
 import Link from "next/link";
+import CustomLink from "../customLink/CustomLink";
 
 function Services({lng}) {
     const t = useTranslations("services");
@@ -32,9 +33,7 @@ function Services({lng}) {
             description={t("pills.health.description")}
           />
         </div>
-        <Button className="p-8 text-xl rounded-3xl">
-          <Link href={`${lng}/services`}>{t("button")}</Link>
-        </Button>
+          <CustomLink href={`${lng}/services`} className="text-xl">{t("button")}</CustomLink>
       </section>
     );
   }

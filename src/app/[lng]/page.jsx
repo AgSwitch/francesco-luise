@@ -10,7 +10,7 @@ function Page({ params: { lng } }) {
       <Hero />
       <Services lng={lng} />
       <AboutMe />
-      <Blog />
+      <Blog lng={lng}/>
       <Contacts />
     </main>
   );

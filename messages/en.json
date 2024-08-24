@@ -79,6 +79,10 @@
 
             "whatsapp":"I'm banana solo Ema?"
     },
+    "blog": {
+        "title": "Blog",
+        "button": "Read More"
+      },
     "footer": {
         "vat": "VAT Number",
         "register": "Register"

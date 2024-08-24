@@ -12,6 +12,7 @@ function Pill({
   link,
   type,
   image = "/fluise.png",
+  date,
 }) {
   return (
     <>
@@ -38,23 +39,38 @@ function Pill({
       {type === "imagePill" && (
         <Link
           href={link.href}
-          className={`border-none bg-background rounded-3xl flex flex-col gap-2 h-full ${className} items-start relative rounded-3xl overflow-hidden`}
+          className={`border-none bg-background rounded-3xl flex flex-col gap-2 h-full ${className} items-start relative rounded-3xl overflow-hidden h-[450px] md:h-96`}
         >
           <Image
             src={image}
             alt="blog card"
             width={500}
             height={500}
-            className="w-full h-full"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 transition-all duration-700 flex flex-col bg-background bg-opacity-60 p-8 justify-between items-center">
+          {/* DESKTOP */}
+          <div className="hidden md:flex absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 transition-all duration-700 flex-col bg-background bg-opacity-60 p-8 justify-between items-center">
             <div className="h-full"></div>
-            <h3 className="font-bold text-4xl">{title}</h3>
+            {date && <date className="text-primary/50 text-xs">{date}</date>}
+            <h3 className="font-bold text-4xl text-center">{title}</h3>
             <p className="text-lg pt-8">{description}</p>
             <div className="h-full flex items-end justify-center">
               <div className="flex items-center gap-2 underline">
-              <p>Read more...</p>
-              <FaArrowRight />
+                <p>{link.value}</p>
+                <FaArrowRight />
+              </div>
+            </div>
+          </div>
+
+          {/* MOBILE */}
+          <div className="flex md:hidden absolute bottom-0 left-0 w-full h-fit transition-all duration-700 flex-col bg-background bg-opacity-60 p-2 justify-between items-center">
+            {date && <date className="text-primary/50 text-xs">{date}</date>}
+            <h3 className="font-bold text-xl text-center">{title}</h3>
+            <p className="text-lg pt-2">{description}</p>
+            <div className="h-full flex items-end justify-center">
+              <div className="flex items-center gap-2 underline">
+                <p>{link.value}</p>
+                <FaArrowRight />
               </div>
             </div>
           </div>
