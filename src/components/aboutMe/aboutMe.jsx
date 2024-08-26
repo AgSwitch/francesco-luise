@@ -14,12 +14,12 @@ function AboutMe() {
         <h4 className="text-lg md:text-2xl">{t("description")}</h4>
       </div>
       <div className="grid md:grid-cols-2 px-8 w-full h-full gap-12 md:gap-8">
-        <div className="h-72 md:h-full w-full relative flex justify-center">
+        <div className="h-72 md:h-full w-full relative flex justify-center rounded-lg overflow-hidden">
           <Image
-            src="/aboutme.png"
+            src="https://images.pexels.com/photos/5794059/pexels-photo-5794059.jpeg"
             alt="About me"
             layout="fill"
-            className="h-full w-full object-contain"
+            className="h-full w-full object-cover"
           />
         </div>
         <div className="flex justify-center">
