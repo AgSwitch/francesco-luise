@@ -16,9 +16,10 @@ const Hero = () => {
           draggable={false}
           src={"/hero.png"}
           className="object-cover h-screen md:h-fit md:object-contain drop-shadow-4xl"
-          alt=""
+          alt="Francesco Luise"
           width={650}
           height={650}
+          priority
         />
       </div>
     </section>
