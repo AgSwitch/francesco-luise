@@ -17,6 +17,7 @@ function Contacts(){
           <h3 className="text-6xl font-bold">{t('title')}</h3>
           <div className="grid md:grid-cols-2 mx-auto gap-8 px-8">
             <Pill
+              type={'linkPill'}
               title={"Call Me"}
               description={contacts.phone}
               Icon={FaPhone}
@@ -24,6 +25,7 @@ function Contacts(){
               link={{ target: "_blank", action: "tel:", href: contacts.phone }}
             />
             <Pill
+              type={'linkPill'}
               title={"Email Me"}
               description={contacts.email}
               Icon={MdEmail}
@@ -31,6 +33,7 @@ function Contacts(){
               link={{ target: "_blank", action: "mailto:", href: contacts.email }}
             />
             <Pill
+              type={'linkPill'}
               title={"Whatsapp Me"}
               description={contacts.phone}
               Icon={IoLogoWhatsapp}
@@ -42,6 +45,7 @@ function Contacts(){
               }}
             />
             <Pill
+              type={'linkPill'}
               title={"Find Me"}
               description={contacts.address}
               Icon={IoMdPin}

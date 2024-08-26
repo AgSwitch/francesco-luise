@@ -78,6 +78,10 @@
             "whatsapp":"Sono banana only Ema?"
         
   },
+  "blog": {
+    "title": "Blog",
+    "button": "Leggi di più"
+  },
   "footer": {
     "vat": "Partita IVA",
     "register": "Albo"

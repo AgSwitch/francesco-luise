@@ -5,6 +5,7 @@ import { TbMassage } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
 import Pill from "../pill/Pill";
 import Link from "next/link";
+import CustomLink from "../customLink/CustomLink";
 
 function Services({lng}) {
     const t = useTranslations("services");
@@ -12,7 +13,7 @@ function Services({lng}) {
     return (
       <section
         id="services"
-        className=" min-h-screen bg-secondary py-20 flex flex-col items-center justify-center gap-10"
+        className="relative z-10 min-h-screen bg-secondary py-20 flex flex-col items-center justify-center gap-10"
       >
         <h3 className="text-6xl font-bold">{t("title")}</h3>
         <div className="grid lg:grid-cols-3 px-8 lg:px-20 gap-8">
@@ -32,9 +33,7 @@ function Services({lng}) {
             description={t("pills.health.description")}
           />
         </div>
-        <Button className="p-8 text-xl rounded-3xl">
-          <Link href={`${lng}/services`}>{t("button")}</Link>
-        </Button>
+          <CustomLink href={`${lng}/services`} className="text-xl">{t("button")}</CustomLink>
       </section>
     );
   }

@@ -9,7 +9,7 @@ import {
   PencilIcon,
 } from "lucide-react";
 
-import { FaRegUser, FaWhatsapp } from "react-icons/fa";
+import { FaBlog, FaPencilAlt, FaRegUser, FaWhatsapp } from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 
 //I18n
@@ -34,6 +34,7 @@ const Icons = {
   whatsapp: (props) => <FaWhatsapp {...props} />,
   services: (props) => <TbMassage {...props} />,
   aboutMe: (props) => <FaRegUser {...props} />,
+  blog: (props) => <FaPencilAlt {...props} />,
 };
 function Navbar({ lng }) {
     const DATA = {
@@ -45,9 +46,10 @@ function Navbar({ lng }) {
                 label: 'services',
             },
             { href: `/${lng}#aboutme`, icon: Icons.aboutMe, label: 'aboutme' },
+            { href: `/${lng}#blog`, icon: PencilIcon, label: 'blog' },
             { href: `/${lng}#contact`, icon: Icons.contact, label: 'contact' },
         ],
-        pages: [{ href: `/${lng}/blog`, icon: PencilIcon, label: 'blog' }],
+        // pages: [{ href: `/${lng}/blog`, icon: PencilIcon, label: 'blog' }],
     };
     const t = useTranslations('navbar');
     const [open, setOpen] = useState(false);
@@ -80,7 +82,7 @@ function Navbar({ lng }) {
                                 </Tooltip>
                             </DockIcon>
                         ))}
-                        <Separator
+                        {/* <Separator
                             orientation="vertical"
                             className="h-full py-2"
                         />
@@ -106,7 +108,7 @@ function Navbar({ lng }) {
                                     </TooltipContent>
                                 </Tooltip>
                             </DockIcon>
-                        ))}
+                        ))} */}
                     </Dock>
                 </TooltipProvider>
                 <TooltipProvider>
