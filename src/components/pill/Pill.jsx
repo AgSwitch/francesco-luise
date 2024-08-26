@@ -47,7 +47,7 @@ function Pill({
             className="w-full h-full object-cover"
           />
           {/* DESKTOP */}
-          <div className="hidden md:flex absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 transition-all duration-700 flex-col bg-background bg-opacity-60 p-8 justify-between items-center">
+          <div className="hidden lg:flex absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 transition-all duration-700 flex-col bg-background bg-opacity-60 p-8 justify-between items-center">
             <div className="h-full"></div>
             {date && <date className="text-primary/50 text-xs">{date}</date>}
             <h3 className="font-bold text-4xl text-center">{title}</h3>
@@ -61,7 +61,7 @@ function Pill({
           </div>
 
           {/* MOBILE */}
-          <div className="flex md:hidden absolute bottom-0 left-0 w-full h-fit transition-all duration-700 flex-col bg-background bg-opacity-60 p-2 justify-between items-center">
+          <div className="flex lg:hidden absolute bottom-0 left-0 w-full h-fit transition-all duration-700 flex-col bg-background bg-opacity-60 p-2 justify-between items-center">
             {date && <date className="text-primary/50 text-xs">{date}</date>}
             <h3 className="font-bold text-xl text-center">{title}</h3>
             <p className="text-lg pt-2">{description}</p>

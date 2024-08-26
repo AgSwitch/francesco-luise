@@ -13,7 +13,7 @@ function Services({lng}) {
     return (
       <section
         id="services"
-        className=" min-h-screen bg-secondary py-20 flex flex-col items-center justify-center gap-10"
+        className="relative z-10 min-h-screen bg-secondary py-20 flex flex-col items-center justify-center gap-10"
       >
         <h3 className="text-6xl font-bold">{t("title")}</h3>
         <div className="grid lg:grid-cols-3 px-8 lg:px-20 gap-8">
