@@ -19,8 +19,17 @@ export function CustomForm({ className }) {
         defaultValues: defaultValues,
     });
 
-    function onSubmit(values) {
-        console.log(values);
+    async function onSubmit(values) {
+        const response = await fetch('/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(values),
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
     }
 
     return (
