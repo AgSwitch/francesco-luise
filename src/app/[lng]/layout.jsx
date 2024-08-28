@@ -7,6 +7,7 @@ import { Lato } from 'next/font/google';
 import { availableLanguages } from '../../../global/languages';
 import Footer from '@/components/footer/Footer';
 import CalendlyPopup from '@/components/calendly/CalendlyPopup';
+import { Toaster } from 'sonner';
 
 const lato = Lato({
     weight: ['100', '300', '400', '700', '900'],
@@ -26,6 +27,7 @@ export default async function RootLayout({ children, params: { lng } }) {
         <html lang={lng} dir={dir(lng)}>
             <body className={`${lato.className} text-primary`}>
                 <NextIntlClientProvider messages={messages}>
+                    <Toaster richColors/>
                     <Navbar lng={lng} />
                     {children}
                     <Footer />
