@@ -2,9 +2,7 @@ import { useTranslations } from "next-intl";
 import { CiMedicalClipboard } from "react-icons/ci";
 import { IoBarbellOutline } from "react-icons/io5";
 import { TbMassage } from "react-icons/tb";
-import { Button } from "@/components/ui/button";
 import Pill from "../pill/Pill";
-import Link from "next/link";
 import CustomLink from "../customLink/CustomLink";
 
 function Services({lng}) {
