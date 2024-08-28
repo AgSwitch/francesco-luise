@@ -1,0 +1,92 @@
+{
+  "service_page": {
+      "title": "Servizi di Fisioterapia",
+      "main_subtitle": "Migliora la tua salute e il tuo benessere con i nostri trattamenti personalizzati",
+      "services": [
+          {
+              "service_title": "Valutazione Fisioterapica",
+              "service_subtitle": "Analisi completa per un trattamento su misura",
+              "description": "Una valutazione iniziale approfondita per identificare le tue esigenze specifiche e creare un piano di trattamento personalizzato.",
+              "points": [
+                  "Analisi della postura",
+                  "Valutazione della mobilità",
+                  "Esame di muscoli e articolazioni",
+                  "Discussione degli obiettivi del trattamento"
+              ],
+              "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
+          },
+          {
+              "service_title": "Riabilitazione Ortopedica",
+              "service_subtitle": "Ripristina la funzionalità dopo un intervento chirurgico o un infortunio",
+              "description": "Programmi di riabilitazione specializzati per aiutarti a recuperare forza, mobilità e funzionalità dopo interventi chirurgici o infortuni.",
+              "points": [
+                  "Recupero post-operatorio",
+                  "Trattamento delle lesioni sportive",
+                  "Esercizi di mobilità e rafforzamento",
+                  "Tecniche di terapia manuale"
+              ],
+              "image": "https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg"
+          },
+          {
+              "service_title": "Terapia Manuale",
+              "service_subtitle": "Alleviamento del dolore e miglioramento della mobilità",
+              "description": "Tecniche di terapia manuale per alleviare il dolore, migliorare la mobilità articolare e promuovere il benessere generale.",
+              "points": [
+                  "Manipolazioni articolari",
+                  "Mobilizzazioni",
+                  "Massaggio terapeutico",
+                  "Trattamento dei tessuti molli"
+              ],
+              "image": "https://images.pexels.com/photos/5794048/pexels-photo-5794048.jpeg"
+          },
+          {
+              "service_title": "Fisioterapia Sportiva",
+              "service_subtitle": "Ottimizza le tue prestazioni e previeni gli infortuni",
+              "description": "Servizi di fisioterapia personalizzati per gli atleti, focalizzati sul miglioramento delle prestazioni sportive e sulla prevenzione degli infortuni.",
+              "points": [
+                  "Valutazione biomeccanica",
+                  "Piani di allenamento personalizzati",
+                  "Trattamento per infortuni acuti e cronici",
+                  "Consulenza per la prevenzione degli infortuni"
+              ],
+              "image": "https://images.pexels.com/photos/6798937/pexels-photo-6798937.jpeg"
+          },
+          {
+              "service_title": "Terapia ad Ultrasuoni",
+              "service_subtitle": "Tecnologia avanzata per una guarigione più rapida",
+              "description": "Uso di onde sonore ad alta frequenza per trattare lesioni di muscoli, tendini e legamenti, promuovendo la guarigione e riducendo il dolore.",
+              "points": [
+                  "Riduzione dell'infiammazione",
+                  "Stimolazione della guarigione dei tessuti",
+                  "Miglioramento della circolazione sanguigna",
+                  "Applicazione indolore"
+              ],
+              "image": "https://images.pexels.com/photos/8313243/pexels-photo-8313243.jpeg"
+          },
+          {
+              "service_title": "Esercizi Terapeutici",
+              "service_subtitle": "Programmi di esercizi per migliorare forza e mobilità",
+              "description": "Piani di esercizi personalizzati progettati per migliorare la tua forza, flessibilità ed equilibrio, accelerando il recupero e prevenendo ricadute.",
+              "points": [
+                  "Esercizi di rafforzamento muscolare",
+                  "Esercizi di stretching",
+                  "Programmi di equilibrio e coordinazione",
+                  "Esercizi di riabilitazione da fare a casa"
+              ],
+              "image": "https://images.pexels.com/photos/5793684/pexels-photo-5793684.jpeg"
+          },
+          {
+              "service_title": "Terapia TENS",
+              "service_subtitle": "Alleviamento del dolore attraverso la stimolazione elettrica",
+              "description": "Trattamento non invasivo per alleviare il dolore attraverso la Stimolazione Elettrica Transcutanea dei Nervi (TENS), ideale per condizioni croniche e acute.",
+              "points": [
+                  "Alleviamento del dolore senza farmaci",
+                  "Trattamento del dolore cronico e acuto",
+                  "Applicazione facile e sicura",
+                  "Complementare ad altri trattamenti"
+              ],
+              "image": "https://images.pexels.com/photos/5793695/pexels-photo-5793695.jpeg"
+          }
+      ]
+  }
+}

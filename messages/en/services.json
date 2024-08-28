@@ -1,0 +1,93 @@
+{
+    "service_page": {
+      "title": "Physiotherapy Services",
+      "main_subtitle": "Enhance your health and well-being with our personalized treatments",
+      "services": [
+        {
+          "service_title": "Physiotherapy Assessment",
+          "service_subtitle": "Comprehensive analysis for a tailored treatment",
+          "description": "An in-depth initial assessment to identify your specific needs and create a personalized treatment plan.",
+          "points": [
+            "Posture analysis",
+            "Mobility evaluation",
+            "Muscle and joint examination",
+            "Discussion of treatment goals"
+          ],
+          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
+        },
+        {
+          "service_title": "Orthopedic Rehabilitation",
+          "service_subtitle": "Restore functionality after surgery or injury",
+          "description": "Specialized rehabilitation programs to help you regain strength, mobility, and functionality after surgeries or injuries.",
+          "points": [
+            "Post-operative recovery",
+            "Sports injury treatment",
+            "Mobility and strengthening exercises",
+            "Manual therapy techniques"
+          ],
+          "image": "https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg"
+        },
+        {
+          "service_title": "Manual Therapy",
+          "service_subtitle": "Pain relief and mobility enhancement",
+          "description": "Manual therapy techniques to alleviate pain, improve joint mobility, and promote overall well-being.",
+          "points": [
+            "Joint manipulations",
+            "Mobilizations",
+            "Therapeutic massage",
+            "Soft tissue treatment"
+          ],
+          "image": "https://images.pexels.com/photos/5794048/pexels-photo-5794048.jpeg"
+        },
+        {
+          "service_title": "Sports Physiotherapy",
+          "service_subtitle": "Optimize your performance and prevent injuries",
+          "description": "Physiotherapy services tailored for athletes, focusing on enhancing sports performance and preventing injuries.",
+          "points": [
+            "Biomechanical assessment",
+            "Personalized training plans",
+            "Treatment for acute and chronic injuries",
+            "Injury prevention counseling"
+          ],
+          "image": "https://images.pexels.com/photos/6798937/pexels-photo-6798937.jpeg"
+        },
+        {
+          "service_title": "Ultrasound Therapy",
+          "service_subtitle": "Advanced technology for faster recovery",
+          "description": "Use of high-frequency sound waves to treat muscle, tendon, and ligament injuries, promoting healing and reducing pain.",
+          "points": [
+            "Inflammation reduction",
+            "Tissue healing stimulation",
+            "Improvement of blood circulation",
+            "Painless application"
+          ],
+          "image": "https://images.pexels.com/photos/8313243/pexels-photo-8313243.jpeg"
+        },
+        {
+          "service_title": "Therapeutic Exercises",
+          "service_subtitle": "Exercise programs to improve strength and mobility",
+          "description": "Personalized exercise plans designed to enhance your strength, flexibility, and balance, accelerating recovery and preventing relapses.",
+          "points": [
+            "Muscle strengthening exercises",
+            "Stretching exercises",
+            "Balance and coordination programs",
+            "At-home rehabilitation exercises"
+          ],
+          "image": "https://images.pexels.com/photos/5793684/pexels-photo-5793684.jpeg"
+        },
+        {
+          "service_title": "TENS Therapy",
+          "service_subtitle": "Pain relief through electrical stimulation",
+          "description": "Non-invasive treatment to relieve pain through Transcutaneous Electrical Nerve Stimulation (TENS), ideal for chronic and acute conditions.",
+          "points": [
+            "Drug-free pain relief",
+            "Treatment of chronic and acute pain",
+            "Easy and safe application",
+            "Complementary to other treatments"
+          ],
+          "image": "https://images.pexels.com/photos/5793695/pexels-photo-5793695.jpeg"
+        }
+      ]
+    }
+  }
+  
