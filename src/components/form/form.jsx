@@ -8,6 +8,7 @@ import CustomFormField from './formField';
 import { useForm } from 'react-hook-form';
 import { formFields, formSchema } from './formData';
 import CustomButton from '../customButton/CustomButton';
+import { toast } from 'sonner';
 
 export function CustomForm({ className }) {
     const defaultValues = {};
@@ -19,8 +20,32 @@ export function CustomForm({ className }) {
         defaultValues: defaultValues,
     });
 
-    function onSubmit(values) {
-        console.log(values);
+    async function onSubmit(values) {
+        try {
+            const response = await fetch('/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(values),
+            });
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            if (response.status === 200) {
+                form.reset();
+                toast.success('message sent successfully');
+            }
+
+            if (response.status === 429) {
+                toast.error('Too many requests');
+            }
+
+        } catch (error) {
+            console.error('Error', error);
+            toast.error('Something went wrong');
+        }
+        
     }
 
     return (
