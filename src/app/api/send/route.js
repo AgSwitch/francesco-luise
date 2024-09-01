@@ -1,7 +1,7 @@
 
 
 import { Resend } from 'resend';
-import EmailTemplate from '../../../emails/EmailTemplate';
+import EmailTemplate from '../../../../emails/EmailTemplate';
 import 'dotenv/config';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
