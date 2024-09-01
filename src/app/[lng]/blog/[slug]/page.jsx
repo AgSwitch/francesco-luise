@@ -8,12 +8,12 @@ const PostPage = ({params}) => {
     const [post, setPost] = useState({});
     const getPost = async (e) => {
         try {
-            const res = await fetch('/api/posts/post', {
+            console.log(params);
+            const res = await fetch(`/api/posts/post?slug=${params.slug}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                //body: JSON.stringify({slug: params.slug}),
             });
             const data = await res.json();
             // const { title, desc, imgUrl} = data._document.data.value.mapValue.fields;
@@ -28,9 +28,6 @@ const PostPage = ({params}) => {
         getPost();
     }, []);
 
-    useEffect(() => {
-        console.log(post);
-    }, [post]);
     if (!post) {
         return <div>Loading...</div>;
     }

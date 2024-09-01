@@ -22,8 +22,11 @@ export async function POST(request) {
 }
 export async function GET(request) {
     try {
+        const {searchParams} = new URL(request.url);
+        const slug = searchParams.get('slug');
+
         const collectionRef = collection(db, "posts");
-        const q = query(collectionRef, where("slug", "==", "prova-test"));
+        const q = query(collectionRef, where("slug", "==", slug));
         const snap = (await getDocs(q)).docs;
         return Response.json(snap[0].data());
     } catch (error) {
