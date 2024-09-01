@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 
-const PostPage = () => {
+const PostPage = ({params}) => {
     const [post, setPost] = useState({});
     const getPost = async (e) => {
         try {
@@ -13,6 +13,7 @@ const PostPage = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
+                //body: JSON.stringify({slug: params.slug}),
             });
             const data = await res.json();
             // const { title, desc, imgUrl} = data._document.data.value.mapValue.fields;

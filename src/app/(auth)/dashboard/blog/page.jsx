@@ -1,5 +1,6 @@
 'use client';
 
+import BundledEditor from '@/components/editor/Editor';
 import Post from '@/components/post/Post';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -10,6 +11,7 @@ import { toast } from 'sonner';
 
 const PageDashboardBlog = () => {
     const [form, setForm] = useState({
+        slug: '',
         title: '',
         desc: '',
         imgUrl: '',
@@ -31,7 +33,6 @@ const PageDashboardBlog = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         try {
             const res = await fetch('/api/posts/post', {
                 method: 'POST',
@@ -49,6 +50,11 @@ const PageDashboardBlog = () => {
         } catch (error) {
             toast.error('Errore');
         }
+    };
+
+    const handleTitleChange = (e) => {
+        let slug = e.target.value.toLowerCase().replace(/\s/g, '-');
+        setForm({ ...form, slug: slug , title: e.target.value });
     };
 
     const handleAddParagraph = () => {
@@ -82,9 +88,7 @@ const PageDashboardBlog = () => {
                 className="flex flex-col max-w-3xl gap-8"
             >
                 <Input
-                    onChange={(e) =>
-                        setForm({ ...form, title: e.target.value })
-                    }
+                    onChange={handleTitleChange}
                     type="text"
                     placeholder="title"
                     name="title"
@@ -134,6 +138,7 @@ const Paragraph = ({
     handleParagraphChange,
     handleRemoveParagraph,
 }) => {
+    const editorRef = useRef(null);
     const inputRef = useRef(null);
     const handleUpload = async (e) => {
         console.log(inputRef.current.files);
@@ -158,16 +163,22 @@ const Paragraph = ({
                 value={subtitle}
                 required
             />
-            <Textarea
+            {/* <Textarea
                 onChange={(e) =>
-                    handleParagraphChange(index, 'paragraph', e.target.value)
+                    
                 }
                 placeholder="paragraph"
                 name="paragraph"
                 value={paragraph}
                 required
+            /> */}
+            <BundledEditor
+                onEditorChange={(content) =>
+                    handleParagraphChange(index, 'paragraph', content)
+                }
+                onInit={(_evt, editor) => (editorRef.current = editor)}
+                initialValue="<p>This is the initial content of the editor.</p>"
             />
-
             <Input
                 ref={inputRef}
                 type="file"

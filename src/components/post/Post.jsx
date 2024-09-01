@@ -17,7 +17,7 @@ const Post = ({post}) => {
                     post.paragraphs.map((paragraph, index) => (
                         <div key={index} className="flex flex-col gap-2">
                             <h3 className="font-semibold text-2xl">{paragraph.subtitle && paragraph.subtitle}</h3>
-                            <p className="text-lg">{paragraph.paragraph && paragraph.paragraph}</p>
+                            <p dangerouslySetInnerHTML={{__html:paragraph.paragraph}} className="text-lg"></p>
                         </div>
                     ))}
             </div>
