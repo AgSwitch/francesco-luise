@@ -1,5 +1,6 @@
 'use client';
 
+import Post from '@/components/post/Post';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { storage } from '@/lib/firebaseConfig';
@@ -96,6 +97,12 @@ const PageDashboardBlog = () => {
                     name="desc"
                     required
                 />
+                <Input
+                    ref={inputRef}
+                    type="file"
+                    name="image"
+                    onChange={handleUpload}
+                />
                 {form.paragraphs.map((paragraph, index) => (
                     <Paragraph
                         key={index}
@@ -106,19 +113,13 @@ const PageDashboardBlog = () => {
                         handleRemoveParagraph={handleRemoveParagraph}
                     />
                 ))}
-
-                <Input
-                    ref={inputRef}
-                    type="file"
-                    name="image"
-                    onChange={handleUpload}
-                />
                 <button type="button" onClick={handleAddParagraph}>
                     Aggiungi Paragrafo
                 </button>
                 <button type="submit">Invia</button>
             </form>
             <div>
+                <Post post={form} />
             </div>
         </div>
     );
@@ -133,8 +134,20 @@ const Paragraph = ({
     handleParagraphChange,
     handleRemoveParagraph,
 }) => {
+    const inputRef = useRef(null);
+    const handleUpload = async (e) => {
+        console.log(inputRef.current.files);
+        const file = inputRef.current.files[0];
+
+        if (file) {
+            const fileRef = ref(storage, `images/${file.name}`);
+            const snapshot = await uploadBytes(fileRef, file);
+            const url = await getDownloadURL(snapshot.ref);
+            handleParagraphChange(index, 'imgUrl', url.toString());
+        }
+    };
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 border-2">
             <Input
                 onChange={(e) =>
                     handleParagraphChange(index, 'subtitle', e.target.value)
@@ -153,6 +166,13 @@ const Paragraph = ({
                 name="paragraph"
                 value={paragraph}
                 required
+            />
+
+            <Input
+                ref={inputRef}
+                type="file"
+                name="image"
+                onChange={handleUpload}
             />
             <button type="button" onClick={() => handleRemoveParagraph(index)}>
                 Elimina

@@ -1,5 +1,5 @@
 import db from "@/lib/firestore";
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc, getDocs, doc, getDoc } from 'firebase/firestore';
 
 export async function POST(request) {
     try {
@@ -16,6 +16,16 @@ export async function POST(request) {
 
         return Response.json(docRef);
 
+    } catch (error) {
+        return Response.json({ error }, { status: 500 });
+    }
+}
+export async function GET(request) {
+    try {
+        const docRef = doc(db, "posts", 'lAYdG3UWTuciFNDW1ydY');
+    
+        const docsSnap = await getDoc(docRef);
+        return Response.json(docsSnap.data());
     } catch (error) {
         return Response.json({ error }, { status: 500 });
     }
