@@ -4,63 +4,14 @@ import Pill from '../pill/Pill';
 import CustomLink from '../customLink/CustomLink';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-
-// to replace with API data
-// const lastBlogPosts = [
-//   {
-//     title: "I benefici della fisioterapia sportiva",
-//     description: "Scopri come la fisioterapia può aiutarti a migliorare le tue performance sportive e prevenire infortuni.",
-//     image: "https://images.pexels.com/photos/27730430/pexels-photo-27730430/free-photo-of-fitness-salute-atleta-esercizio.jpeg?auto=compress&cs=tinysrgb&w=600",
-//     date: "01/03/2023",
-//     link: {
-//       target: "_blank",
-//       href: "https://example.com/fisioterapia-sportiva",
-//     }
-//   },
-//   {
-//     title: "Fisioterapia e dolore cronico: strategie di gestione",
-//     description: "Una guida pratica per gestire il dolore cronico attraverso tecniche fisioterapiche efficaci.",
-//     image: "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg?auto=compress&cs=tinysrgb&w=600",
-//     date: "15/02/2023",
-//     link: {
-//       target: "_blank",
-//       href: "https://example.com/dolore-cronico"
-//     }
-//   },
-//   {
-//     title: "Recupero post-operatorio: l'importanza della fisioterapia",
-//     description: "Come la fisioterapia può accelerare il recupero e migliorare i risultati dopo un intervento chirurgico.",
-//     image: "https://images.pexels.com/photos/5473179/pexels-photo-5473179.jpeg?auto=compress&cs=tinysrgb&w=600",
-//     date: "28/01/2023",
-//     link: {
-//       target: "_blank",
-//       href: "https://example.com/recupero-post-operatorio"
-//     }
-//   },
-// ];
+import useGetBlogPosts from '@/hooks/useGetBlogPost';
 
 const Blog = ({ lng }) => {
-  const [lastBlogPosts, setLastBlogPosts] = useState([]);
-    const getLastBlogPosts = async () => {
-        try {
-            const res = await fetch('api/posts/', {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
-            const data = await res.json();
-            setLastBlogPosts(data);
-        } catch (error) {
-          throw new Error('Error fetching blog posts');
-        }
-    };
-
-    useEffect(() => {
-      getLastBlogPosts();
-    }, []);
-
+    const { lastBlogPosts, loading, error } = useGetBlogPosts(3);
     const t = useTranslations('blog');
+
+    if (loading) return <div>Loading...</div>;
+
     return (
         <section
             id="blog"
