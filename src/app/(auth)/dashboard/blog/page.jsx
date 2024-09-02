@@ -111,7 +111,7 @@ const PageDashboardBlog = () => {
           layout === "row" ? "grid-cols-2" : ""
         }`}
       >
-        <div className="p-8 bg-secondary rounded-3xl w-full grid place-content-center">
+        <div className="p-8 bg-secondary rounded-3xl w-full mx-auto flex flex-col items-center  overflow-y-auto max-h-screen">
           <h1 className="text-4xl font-bold p-8 text-center">Nuovo post</h1>
           <form
             action=""
