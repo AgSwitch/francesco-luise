@@ -6,17 +6,23 @@ import Post from "@/components/post/Post";
 import { Input } from "@/components/ui/input";
 import { storage } from "@/lib/firebaseConfig";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
-import { RiLayoutColumnLine } from "react-icons/ri";
 import { TbLayoutColumns, TbLayoutRows } from "react-icons/tb";
+import Link from "next/link";
+import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 
 const PageDashboardBlog = () => {
-  const [layout, setLayout] = useState(
-    localStorage.getItem("dashboardLayout")
-      ? localStorage.getItem("dashboardLayout")
-      : "col"
-  );
+  const [layout, setLayout] = useState("col");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const savedLayout = localStorage.getItem("dashboardLayout");
+      if (savedLayout) {
+        setLayout(savedLayout);
+      }
+    }
+  }, []);
   const [form, setForm] = useState({
     slug: "",
     title: "",
@@ -29,7 +35,9 @@ const PageDashboardBlog = () => {
   const handleLayoutChange = () => {
     setLayout((prevLayout) => {
       const newLayout = prevLayout === "col" ? "row" : "col";
-      localStorage.setItem("dashboardLayout", newLayout);
+      if (typeof window !== "undefined") {
+        localStorage.setItem("dashboardLayout", newLayout);
+      }
       return newLayout;
     });
   };
@@ -94,17 +102,26 @@ const PageDashboardBlog = () => {
 
   return (
     <div className="p-8">
-      <button
-        onClick={handleLayoutChange}
-        title="Change layout"
-        className="bg-primary text-white p-4 fixed grid place-content-center rounded-full"
-      >
-        {layout === "row" ? (
+      <div className="fixed flex flex-col gap-4">
+        <Link
+          href={"/dashboard"}
+          title="Return to dashboard"
+          className="bg-primary text-white p-4  grid place-content-center rounded-full"
+        >
+          <FaRegArrowAltCircleLeft className="w-8 h-8" />
+        </Link>
+        <button
+          onClick={handleLayoutChange}
+          title="Change layout"
+          className="bg-primary text-white p-4  grid place-content-center rounded-full"
+        >
+          {layout === "row" ? (
             <TbLayoutRows className="w-8 h-8 text-w" />
-        ) : (
-          <TbLayoutColumns className="w-8 h-8" />
-        )}
-      </button>
+          ) : (
+            <TbLayoutColumns className="w-8 h-8" />
+          )}
+        </button>
+      </div>
 
       <div
         className={`grid place-content-center ${

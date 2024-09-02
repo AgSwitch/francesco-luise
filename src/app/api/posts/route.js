@@ -5,7 +5,6 @@ export async function GET(request) {
   try {
     const url = new URL(request.url);
     const searchParams = url.searchParams; 
-    console.log(searchParams);
     const limitNumber = +searchParams.get('limit');
     const collectionRef = collection(db, "posts");
     const q = query(collectionRef, limit(limitNumber));
