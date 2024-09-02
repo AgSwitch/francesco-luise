@@ -1,7 +1,9 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import CustomButton from "@/components/customButton/CustomButton";
-import BundledEditor from "@/components/editor/Editor";
+const BundledEditor = dynamic(() => import('@/components/editor/Editor'), { ssr: false });
+
 import Post from "@/components/post/Post";
 import { Input } from "@/components/ui/input";
 import { storage } from "@/lib/firebaseConfig";
