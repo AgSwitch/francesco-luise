@@ -1,0 +1,36 @@
+/* post-config.css */
+.post-config h1 {
+    @apply text-4xl font-bold text-gray-800 leading-tight mb-4;
+}
+
+.post-config h2 {
+    @apply text-3xl font-semibold text-gray-700 leading-snug mb-3;
+}
+
+.post-config h3 {
+    @apply text-2xl font-medium text-gray-600 leading-normal mb-2;
+}
+
+.post-config h4 {
+    @apply text-xl font-medium text-gray-500 leading-relaxed mb-1;
+}
+
+.post-config h5 {
+    @apply text-lg font-medium text-gray-400 leading-relaxed mb-1;
+}
+
+.post-config h6 {
+    @apply text-base font-medium text-gray-300 leading-relaxed mb-1;
+}
+
+.post-config ul {
+    @apply list-disc pl-5 mb-4;
+}
+
+.post-config ol {
+    @apply list-decimal pl-5 mb-4;
+}
+
+.post-config li {
+    @apply text-base text-gray-700 leading-relaxed mb-2;
+}

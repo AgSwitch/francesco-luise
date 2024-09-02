@@ -1,8 +1,8 @@
 import Image from "next/image";
-
+import "./post.css"
 const Post = ({post}) => {
     return (
-        <div className="p-8">
+        <div className="post-config p-8">
             <div className="grid  lg:grid-cols-2 bg-secondary rounded-3xl overflow-hidden">
                 <div className="relative w-full  aspect-video mx-auto">
                     {post.imgUrl && <Image src={post.imgUrl} alt={post.title} fill className="object-cover" />}
