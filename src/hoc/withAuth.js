@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '@/lib/firebaseConfig';
 import { useRouter } from 'next/navigation';
+import Loader from '@/components/loader/Loader';
 
 const withAuth = (Component) => {
     // eslint-disable-next-line react/display-name
@@ -23,7 +24,7 @@ const withAuth = (Component) => {
             return () => unsubscribe();
         }, [router]);
         if (loading) {
-            return <p>Loading...</p>;
+            return <Loader />;
         }
 
         if (!authenticated) {
