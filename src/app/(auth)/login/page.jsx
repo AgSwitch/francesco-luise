@@ -1,5 +1,7 @@
 'use client';
 
+import CustomButton from '@/components/customButton/CustomButton';
+import { Input } from '@/components/ui/input';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { toast } from 'sonner';
@@ -8,10 +10,10 @@ const PageLogin = () => {
     const router = useRouter();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    async function handlesubmit(e) {
+
+    async function handleSubmit(e) {
         e.preventDefault();
         try {
-            console.log(email, password);
             const res = await fetch('/api/auth/login', {
                 method: 'POST',
                 headers: {
@@ -19,7 +21,6 @@ const PageLogin = () => {
                 },
                 body: JSON.stringify({ email, password }),
             });
-            console.log(res);
             if (res.status === 200) {
                 toast.success('User logged in');
                 router.push('/dashboard');
@@ -31,19 +32,20 @@ const PageLogin = () => {
         }
     }
     return (
-        <div>
-            <form onSubmit={handlesubmit}>
-                <input
+        <div className='bg-secondary h-screen flex justify-center items-center w-full'>
+            <form onSubmit={handleSubmit} className='flex flex-col gap-4 bg-background p-8 max-w-lg rounded-3xl w-full'>
+                <h1 className='text-2xl'>Login</h1>
+                <Input
                     type="email"
                     placeholder="email"
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <input
+                <Input
                     type="password"
                     placeholder="password"
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button type="submit">Login</button>
+                <CustomButton type="submit">Login</CustomButton>
             </form>
         </div>
     );

@@ -1,11 +1,14 @@
 "use client";
 import BlogCard from "@/components/blogCard/BlogCard";
+import Loader from "@/components/loader/Loader";
 import useGetBlogPosts from "@/hooks/useGetBlogPost";
 import { useTranslations } from "next-intl";
 
 const Blog = ({ params: { lng } }) => {
   const { lastBlogPosts, loading, error } = useGetBlogPosts();
   const t = useTranslations("blogPage");
+
+  if(loading) return <Loader />
 
   return (
     <main

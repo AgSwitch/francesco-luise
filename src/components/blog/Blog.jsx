@@ -3,14 +3,14 @@
 import Pill from '../pill/Pill';
 import CustomLink from '../customLink/CustomLink';
 import { useTranslations } from 'next-intl';
-import { useEffect, useState } from 'react';
 import useGetBlogPosts from '@/hooks/useGetBlogPost';
+import Loader from '../loader/Loader';
 
 const Blog = ({ lng }) => {
     const { lastBlogPosts, loading, error } = useGetBlogPosts(3);
     const t = useTranslations('blog');
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) return <Loader />;
 
     return (
         <section
