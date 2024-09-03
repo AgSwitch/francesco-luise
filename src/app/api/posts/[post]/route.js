@@ -1,5 +1,5 @@
 import db from "@/lib/firestore";
-import { collection, addDoc, getDocs, doc, getDoc, query, where, deleteDoc } from 'firebase/firestore';
+import { collection, addDoc, getDocs, doc, getDoc, query, where, deleteDoc, updateDoc } from 'firebase/firestore';
 
 export async function POST(request) {
     try {
@@ -64,5 +64,39 @@ export async function DELETE(request) {
     } catch (error) {
       return new Response(JSON.stringify({ error: error.message }), { status: 500 });
     }
+  }
+    
+  export async function PUT(request) {
+      try {
+          const body = await request.json();
+          const originalSlug = body.originalSlug;
+  
+          if (!originalSlug) {
+              return new Response(JSON.stringify({ error: "Original slug is required" }), { status: 400 });
+          }
+  
+          const collectionRef = collection(db, "posts");
+          const q = query(collectionRef, where("slug", "==", originalSlug));
+          const snap = await getDocs(q);
+  
+          if (snap.empty) {
+              return new Response(JSON.stringify({ error: "Post not found" }), { status: 404 });
+          }
+  
+          const docToUpdate = snap.docs[0];
+          const docRef = doc(db, "posts", docToUpdate.id);
+  
+          await updateDoc(docRef, {
+              title: body.title,
+              desc: body.desc,
+              imgUrl: body.imgUrl,
+              paragraphs: body.paragraphs,
+              slug: body.originalSlug,
+          });
+  
+          return new Response(JSON.stringify({ message: "Post updated successfully" }), { status: 200 });
+      } catch (error) {
+          return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+      }
   }
   

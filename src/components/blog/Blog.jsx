@@ -3,7 +3,7 @@
 import Pill from '../pill/Pill';
 import CustomLink from '../customLink/CustomLink';
 import { useTranslations } from 'next-intl';
-import useGetBlogPosts from '@/hooks/useGetBlogPost';
+import useGetBlogPosts from '@/hooks/useGetBlogPosts';
 import Loader from '../loader/Loader';
 
 const Blog = ({ lng }) => {

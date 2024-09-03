@@ -4,7 +4,7 @@ import CustomLink from "@/components/customLink/CustomLink";
 import DashboardPostCard from "@/components/dashboardPostCard/DashboardPostCard";
 import Loader from "@/components/loader/Loader";
 import withAuth from "@/hoc/withAuth";
-import useGetBlogPosts from "@/hooks/useGetBlogPost";
+import useGetBlogPosts from "@/hooks/useGetBlogPosts";
 import { auth } from "@/lib/firebaseConfig";
 import Link from "next/link";
 import { useState } from "react";
