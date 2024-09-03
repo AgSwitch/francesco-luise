@@ -19,7 +19,6 @@ const useGetBlogPosts = (numberOfPosts) => {
         throw new Error(`Error fetching blog posts: ${res.statusText}`);
       }
       const data = await res.json();
-      console.log(data);
       setLastBlogPosts(data);
     } catch (error) {
       setError(error.message);
@@ -33,7 +32,11 @@ const useGetBlogPosts = (numberOfPosts) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return { lastBlogPosts, loading, error };
+  const refreshPosts = () => {
+    getBlogPosts();
+  };
+
+  return { lastBlogPosts, loading, error, refreshPosts };
 };
 
 export default useGetBlogPosts;
