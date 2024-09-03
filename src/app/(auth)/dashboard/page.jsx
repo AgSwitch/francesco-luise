@@ -2,6 +2,7 @@
 
 import CustomButton from "@/components/customButton/CustomButton";
 import CustomLink from "@/components/customLink/CustomLink";
+import withAuth from "@/hoc/withAuth";
 import useGetBlogPosts from "@/hooks/useGetBlogPost";
 import Link from "next/link";
 import { CiEdit } from "react-icons/ci";
@@ -54,4 +55,4 @@ const PageDashboard = () => {
     </div>
   );
 };
-export default PageDashboard;
+export default withAuth(PageDashboard);
