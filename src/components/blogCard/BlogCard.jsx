@@ -4,7 +4,7 @@ import Link from "next/link";
 function BlogCard({ index, post, lng }) {
   return (
     <div
-      className={`py-20 grid md:grid-cols-2 min-h-full gap-8 px-8 ${
+      className={`py-20 grid md:grid-cols-2 min-h-full gap-8 px-8 w-screen ${
         index % 2 === 0 ? "bg-background" : "bg-secondary"
       }`}
     >

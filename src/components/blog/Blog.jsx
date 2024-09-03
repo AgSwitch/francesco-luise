@@ -18,7 +18,7 @@ const Blog = ({ lng }) => {
             className=" min-h-screen bg-secondary py-20 flex flex-col items-center justify-center gap-10"
         >
             <h3 className="text-6xl font-bold">{t('title')}</h3>
-            <div className="grid lg:grid-cols-3 gap-8 px-8">
+            <div className="grid lg:grid-cols-3 gap-8 px-8 w-full">
                 {lastBlogPosts.length && lastBlogPosts.map((post) => (
                     <Pill
                         type={'imagePill'}
