@@ -13,6 +13,7 @@ import { toast } from "sonner";
 import { TbLayoutColumns, TbLayoutRows } from "react-icons/tb";
 import Link from "next/link";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
+import withAuth from "@/hoc/withAuth";
 
 const PageDashboardBlog = () => {
   const [layout, setLayout] = useState("col");
@@ -190,7 +191,7 @@ const PageDashboardBlog = () => {
   );
 };
 
-export default PageDashboardBlog;
+export default withAuth(PageDashboardBlog);
 
 const Paragraph = ({
   index,
