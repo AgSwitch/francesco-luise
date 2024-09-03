@@ -2,6 +2,8 @@
 
 import CustomButton from '@/components/customButton/CustomButton';
 import { Input } from '@/components/ui/input';
+import { auth } from '@/lib/firebaseConfig';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { toast } from 'sonner';
@@ -14,21 +16,15 @@ const PageLogin = () => {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const res = await fetch('/api/auth/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email, password }),
-            });
-            if (res.status === 200) {
-                toast.success('User logged in');
-                router.push('/dashboard');
-            } else if (res.status === 403) {
-                toast.error('Invalid credentials');
-            }
+            await signInWithEmailAndPassword(auth, email, password);
+            toast.success('User logged in');
+            router.push('/dashboard');
         } catch (error) {
-            toast.error(error);
+            if (error.code === 'auth/wrong-password' || error.code === 'auth/user-not-found' || error.code === 'auth/invalid-credential') {
+                toast.error('Invalid credentials');
+            } else {
+                toast.error('Something went wrong');
+            }
         }
     }
     return (
