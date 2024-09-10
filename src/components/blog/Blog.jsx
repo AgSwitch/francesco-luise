@@ -37,7 +37,7 @@ const Blog = ({ lng }) => {
                                 />
                             ))}
                         </div>
-                        <CustomLink href={`/${lng}/blog`} className="text-xl">
+                        <CustomLink href={`/${lng}/blog`} className="text-base">
                             {t('button')}
                         </CustomLink>
                     </section>) : <></>

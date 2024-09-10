@@ -31,7 +31,7 @@ function Services({lng}) {
             description={t("pills.health.description")}
           />
         </div>
-          <CustomLink href={`${lng}/services`} className="text-xl">{t("button")}</CustomLink>
+          <CustomLink href={`${lng}/services`} className="text-base">{t("button")}</CustomLink>
       </section>
     );
   }
