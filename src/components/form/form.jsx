@@ -22,7 +22,7 @@ export function CustomForm({ className }) {
 
     async function onSubmit(values) {
         try {
-            const response = await fetch('/send', {
+            const response = await fetch('api/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
