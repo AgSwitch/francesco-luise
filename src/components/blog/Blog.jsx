@@ -13,31 +13,36 @@ const Blog = ({ lng }) => {
     if (loading) return <Loader />;
 
     return (
-        <section
-            id="blog"
-            className=" min-h-screen bg-secondary py-20 flex flex-col items-center justify-center gap-10"
-        >
-            <h3 className="text-6xl font-bold">{t('title')}</h3>
-            <div className="grid lg:grid-cols-3 gap-8 px-8 w-full">
-                {lastBlogPosts.length && lastBlogPosts.map((post) => (
-                    <Pill
-                        type={'imagePill'}
-                        key={post.slug}
-                        description={post.desc}
-                        title={post.title}
-                        image={post.imgUrl}
-                        //date={post.date}
-                        link={{
-                            value: t('button'),
-                            href: `/${lng}/blog/${post.slug}`,
-                        }}
-                    />
-                ))}
-            </div>
-            <CustomLink href={`/${lng}/blog`} className="text-xl">
-                {t('button')}
-            </CustomLink>
-        </section>
+        <>
+            {
+                lastBlogPosts.length ?
+                    (<section
+                        id="blog"
+                        className=" min-h-screen bg-secondary py-20 flex flex-col items-center justify-center gap-10"
+                    >
+                        <h3 className="text-6xl font-bold">{t('title')}</h3>
+                        <div className="grid lg:grid-cols-3 gap-8 px-8 w-full">
+                            {lastBlogPosts.length && lastBlogPosts.map((post) => (
+                                <Pill
+                                    type={'imagePill'}
+                                    key={post.slug}
+                                    description={post.desc}
+                                    title={post.title}
+                                    image={post.imgUrl}
+                                    //date={post.date}
+                                    link={{
+                                        value: t('button'),
+                                        href: `/${lng}/blog/${post.slug}`,
+                                    }}
+                                />
+                            ))}
+                        </div>
+                        <CustomLink href={`/${lng}/blog`} className="text-xl">
+                            {t('button')}
+                        </CustomLink>
+                    </section>) : <></>
+            }
+        </>
     );
 };
 

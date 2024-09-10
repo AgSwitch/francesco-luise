@@ -50,7 +50,7 @@ const PageDashboard = () => {
         <div className="flex items-center flex-col bg-background p-8 rounded-lg w-full max-w-4xl">
           <h2 className="text-2xl font-bold pb-8">Posts</h2>
           <div className="flex flex-col w-full max-w-4xl gap-4">
-            {lastBlogPosts.length &&
+            {lastBlogPosts.length ? 
               lastBlogPosts.map((post) => {
                 return (
                   <DashboardPostCard
@@ -59,7 +59,9 @@ const PageDashboard = () => {
                     onDelete={refreshPosts}
                   />
                 );
-              })}
+              })
+              : <div>Nessun Post</div>
+              }
           </div>
         </div>
       </div>
