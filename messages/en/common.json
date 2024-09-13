@@ -75,7 +75,11 @@
     "calendly": {
       "title": "Book now"
     },
-    "whatsapp": "Hello Dr. Francesco Luise, I would like to get more information about your physiotherapy services. Can we schedule an appointment?"
+    "whatsapp": "Hello Dr. Francesco Luise, I would like to get more information about your physiotherapy services. Can we schedule an appointment?",
+    "storeLocator": {
+      "label": "Francesco Luise Phisioterapist",
+      "hrefLabel": "view on google maps" 
+    }
   },
   "blog": {
     "title": "Blog",
