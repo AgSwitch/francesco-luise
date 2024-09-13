@@ -3,14 +3,15 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import { useTranslations } from "next-intl";
 
 const mapData = {
     lat:45.564470557633605,
     lng: 12.301835837433977,
     zoom: 17,
-    name: 'Francesco Luise Fisioterapista',
+    name: 'storeLocator.label',
     address: 'Via Don Giovanni Bosco, 30020 Marcon VE',
-    href: 'https://www.google.com/maps/dir//Via+Pasqualigo,+59%2FH,+30174+Venezia+VE/@45.5086748,12.1798239,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x477eb464c72a4d9d:0xf80e3d11c992c194!2m2!1d12.2622495!2d45.5086981?entry=ttu',
+    href: 'https://www.google.com/maps/place/Via+Don+Giovanni+Bosco,+30020+Marcon+VE/@45.5642976,12.2991845,17z/data=!3m1!4b1!4m6!3m5!1s0x47794c9e34569e4f:0xd9130b3f0974ec00!8m2!3d45.5642976!4d12.3017594!16s%2Fg%2F1tfwnsy5?coh=219816&entry=tts&g_ep=EgoyMDI0MDgxNC4xKgBIAVADhttps://www.google.com/maps/place/Via+Don+Giovanni+Bosco,+30020+Marcon+VE/@45.5642976,12.2991845,17z/data=!3m1!4b1!4m6!3m5!1s0x47794c9e34569e4f:0xd9130b3f0974ec00!8m2!3d45.5642976!4d12.3017594!16s%2Fg%2F1tfwnsy5?coh=219816&entry=tts&g_ep=EgoyMDI0MDgxNC4xKgBIAVAD',
     directionText: 'map.visitUs',
     scrollWheelZoom: false,
 };
@@ -26,6 +27,7 @@ const customMarker = L.icon({
 });
 
 export default function Map({ className, mapStyle }) {
+const t = useTranslations("contacts");
   return (
     <div
       className={`w-full h-full bg-background flex justify-center relative z-0 ${className}`}
@@ -42,9 +44,10 @@ export default function Map({ className, mapStyle }) {
         />
         <Marker icon={customMarker} position={[mapData.lat, mapData.lng]}>
           <Popup>
-            <p className="font-bold">{mapData.name}</p>
+            <p className="font-bold">{t(mapData.name)}</p>
             <p>{mapData.address}</p>
             <a href={mapData.href} target="_blank">
+              {t('storeLocator.hrefLabel')}
             </a>
           </Popup>
         </Marker>

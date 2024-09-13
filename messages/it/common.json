@@ -75,7 +75,11 @@
     "calendly": {
       "title": "Prenota ora"
     },
-    "whatsapp": "Ciao Dott. Francesco Luise, vorrei avere maggiori informazioni riguardo i vostri servizi di fisioterapia. Potremmo fissare un appuntamento?"
+    "whatsapp": "Ciao Dott. Francesco Luise, vorrei avere maggiori informazioni riguardo i vostri servizi di fisioterapia. Potremmo fissare un appuntamento?",
+  "storeLocator": {
+    "label": "Francesco Luise Fisioterapista",
+    "hrefLabel": "vedi su google maps" 
+  }
   },
   "blog": {
     "title": "Blog",
