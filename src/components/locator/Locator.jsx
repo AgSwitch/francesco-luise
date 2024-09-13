@@ -16,13 +16,13 @@ const mapData = {
 };
 
 const customMarker = L.icon({
-  iconUrl: "/map/mapMarker.png",
+  iconUrl: "/map/marker.svg",
 
-  iconSize: [38, 57], // size of the icon
+  iconSize: [60, 57], // size of the icon
   shadowSize: [50, 64], // size of the shadow
   iconAnchor: [22, 56], // point of the icon which will correspond to marker's location
   shadowAnchor: [4, 62], // the same for the shadow
-  popupAnchor: [-3, -20], // point from which the popup should open relative to the iconAnchor
+  popupAnchor: [8, -20], // point from which the popup should open relative to the iconAnchor
 });
 
 export default function Map({ className, mapStyle }) {

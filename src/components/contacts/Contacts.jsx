@@ -73,7 +73,7 @@ function Contacts(){
           </div>
   
           <CustomForm className={"w-full max-w-3xl"} />
-        <Locator  className={'px-20 lg:px-0'} mapStyle={'rounded-2xl'}/>
+        <Locator  className={'px-8 lg:px-0'} mapStyle={'rounded-2xl max-w-3xl'}/>
         </section>
     )
   }
