@@ -194,7 +194,7 @@ const PageDashboardBlog = () => {
               />
             </div>
             {form.paragraphs.map((paragraph, index) => {
-               const initialText = paragraph.paragraph || "Testo iniziale";
+               const initialText = paragraph.paragraph || "";
                    
               return (
                 <Paragraph

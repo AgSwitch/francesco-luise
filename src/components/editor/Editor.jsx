@@ -1,12 +1,15 @@
 import dynamic from 'next/dynamic';
 
 // Importa l'editor dinamicamente solo sul lato client
-const Editor = dynamic(() => import('@tinymce/tinymce-react').then(mod => mod.Editor), { ssr: false });
+const Editor = dynamic(
+    () => import('@tinymce/tinymce-react').then((mod) => mod.Editor),
+    { ssr: false },
+);
 
 // TinyMCE so the global var exists
 import 'tinymce/tinymce';
 // DOM model
-import 'tinymce/models/dom/model'
+import 'tinymce/models/dom/model';
 // Theme
 import 'tinymce/themes/silver';
 // Toolbar icons
@@ -54,33 +57,34 @@ import 'tinymce/skins/content/default/content';
 import 'tinymce/skins/ui/oxide/content';
 
 export default function BundledEditor(props) {
-  return (
-    <Editor
-      licenseKey='gpl'
-      init={{
-        height: 500,
-        menubar: false,
-        plugins: [
-            'advlist',
-            'anchor',
-            'autolink',
-            'help',
-            'image',
-            'link',
-            'lists',
-            'searchreplace',
-            'table',
-            'wordcount',
-        ],
-        toolbar:
-            'undo redo | link | blocks | ' +
-            'bold italic forecolor | alignleft aligncenter ' +
-            'alignright alignjustify | bullist numlist outdent indent | ' +
-            'removeformat | help',
-        content_style:
-            'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
-    }}
-      {...props}
-    />
-  );
+    return (
+        <Editor
+            licenseKey="gpl"
+            init={{
+                height: 500,
+                menubar: false,
+                plugins: [
+                    'advlist',
+                    'anchor',
+                    'autolink',
+                    'help',
+                    'image',
+                    'link',
+                    'lists',
+                    'searchreplace',
+                    'table',
+                    'wordcount',
+                ],
+                toolbar:
+                    'undo redo | link | blocks | ' +
+                    'bold italic forecolor | alignleft aligncenter ' +
+                    'alignright alignjustify | bullist numlist outdent indent | ' +
+                    'removeformat | help',
+                content_style:
+                    'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+                    
+            }}
+            {...props}
+        />
+    );
 }
