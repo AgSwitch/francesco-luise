@@ -1,5 +1,5 @@
 import db from "@/lib/firestore";
-import { collection, addDoc, getDocs, doc, getDoc, query, where, deleteDoc, updateDoc } from 'firebase/firestore';
+import { collection, addDoc, getDocs, doc, getDoc, query, where, deleteDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 
 export async function POST(request) {
     try {
@@ -10,7 +10,8 @@ export async function POST(request) {
             desc: body.desc,
             imgUrl: body.imgUrl,
             paragraphs: body.paragraphs,
-            slug: body.slug
+            slug: body.slug,
+            createdAt: serverTimestamp()
         });
 
 

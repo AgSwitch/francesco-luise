@@ -7,7 +7,7 @@ export async function GET(request) {
     const searchParams = url.searchParams; 
     const limitNumber = +searchParams.get('limit');
     const collectionRef = collection(db, "posts");
-    const q = query(collectionRef, limit(limitNumber));
+    const q = query(collectionRef, orderBy("createdAt", "desc"), limit(limitNumber));
 
     const snap = await getDocs(q);
     const posts = snap.docs.map((doc) => doc.data());

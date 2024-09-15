@@ -45,6 +45,17 @@ const Post = ({ post }) => {
                   </div>
                 </div>
               )}
+              {!paragraph.imgUrl && (
+                  <div className="flex flex-col gap-2 items-start max-w-2xl py-8 px-1 lg:p-8">
+                    <h3 className="font-semibold text-2xl">
+                      {paragraph.subtitle && paragraph.subtitle}
+                    </h3>
+                    <p
+                      dangerouslySetInnerHTML={{ __html: paragraph.paragraph }}
+                      className="text-lg"
+                    ></p>
+                  </div>
+              )}
             </div>
           ))}
       </div>
