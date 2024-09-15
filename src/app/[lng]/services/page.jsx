@@ -1,27 +1,20 @@
-"use client"
-import { useTranslations } from "next-intl";
-import { ServiceCard } from "../../../components/serviceCard/ServiceCard";
+import Services from "./Services";
+import { getMessages } from "next-intl/server";
 
-const Services = () => {
-  const t = useTranslations("service_page");
+export async function generateMetadata({ params: { lng } }) {
+  const messages = await getMessages(lng);
+  const siteTitle = messages.hero.title;
 
-  const services = t.raw("services");
+  const pageTitle = messages.services.title;
+  const fullTitle = `${pageTitle} | ${siteTitle}`;
 
-  return (
-    <main>
-      <div className="flex justify-center flex-col items-center pt-32 text-center px-8">
-        <h1 className="text-3xl md:text-6xl font-bold">{t("title")}</h1>
-        <h2 className="text-xl md:text-3xl font-semibold">{t("main_subtitle")}</h2>
-      </div>
-      <div>
-        {services.map((_, index) => (
-          <ServiceCard key={index} index={index} />
-        ))}
-      </div>
-    </main>
-  );
+  return {
+    title: fullTitle,
+  };
+}
+
+const ServicesPage = () => {
+  return <Services />;
 };
 
-export default Services;
-
-
+export default ServicesPage;
