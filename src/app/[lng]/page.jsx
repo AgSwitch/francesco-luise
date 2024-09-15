@@ -11,7 +11,7 @@ function Page({ params: { lng } }) {
       <Hero />
       <Services lng={lng} />
       <AboutMe />
-      <Blog lng={lng}/>
+      { lng === 'it' && <Blog lng={lng}/> }
       <Contacts />
     </main>
   );
