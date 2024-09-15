@@ -1,21 +1,20 @@
-'use client';
-import Loader from '@/components/loader/Loader';
-import Post from '@/components/post/Post';
-import useGetBlogPost from '@/hooks/useGetBlogPost';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import { toast } from 'sonner';
+import { getPostTitle } from "@/lib/getPostTitle";
+import BlogPost from "./BlogPost";
+import { getMessages } from "next-intl/server";
 
-const PostPage = ({params}) => {
-    const { post, loading } = useGetBlogPost(params.slug);
+export async function generateMetadata({ params }) {
+  const postTitle = await getPostTitle(params.slug);
 
-    if(loading){
-        return <Loader />
-    }
+  const messages = await getMessages(params.lng);
+  const siteTitle = messages.hero.title;
 
-    if (!post) {
-        return <div>Loading...</div>;
-    }
-    return <Post post={post}/>;
+  return {
+    title: postTitle ? `${postTitle} | ${siteTitle}` : siteTitle,
+  };
+}
+
+const PostPage = ({ params }) => {
+  return <BlogPost params={params} />;
 };
+
 export default PostPage;
