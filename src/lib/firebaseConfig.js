@@ -17,14 +17,7 @@ const firebaseConfig = {
   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCguKk8AhqjCdcrAPAthnfKa2iTfLmIJ9s",
-//   authDomain: "francesco-luise-fisioterapista.firebaseapp.com",
-//   projectId: "francesco-luise-fisioterapista",
-//   storageBucket: "francesco-luise-fisioterapista.appspot.com",
-//   messagingSenderId: "96312342338",
-//   appId: "1:96312342338:web:718a2da0be3316e04dbadb"
-// };
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
