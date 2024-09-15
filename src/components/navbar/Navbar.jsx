@@ -49,38 +49,38 @@ function Navbar({ lng }) {
     <div className="fixed top-0 z-50 left-1/2 -translate-x-1/2">
       <div className="flex gap-4">
         <TooltipProvider>
-          <Dock direction="middle">
-          {DATA.navbar
-  .filter((item) => !(item.label === "blog" && lng !== "it"))
-  .map((item, index) => {
-    return (
-      <DockIcon key={item.label}>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Link
-              href={item.href}
-              className={cn(
-                buttonVariants({
-                  variant: "ghost",
-                  size: "icon",
-                }),
-                "size-12 rounded-full"
-              )}
-            >
-              <item.icon className="size-4" />
-            </Link>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>{t(item.label)}</p>
-          </TooltipContent>
-        </Tooltip>
-      </DockIcon>
-    );
-  })}
+          <Dock direction="middle" className=" bg-background bg-opacity-60 backdrop-blur-lg">
+            {DATA.navbar
+              .filter((item) => !(item.label === "blog" && lng !== "it"))
+              .map((item, index) => {
+                return (
+                  <DockIcon key={item.label}>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Link
+                          href={item.href}
+                          className={cn(
+                            buttonVariants({
+                              variant: "ghost",
+                              size: "icon",
+                            }),
+                            "size-12 rounded-full"
+                          )}
+                        >
+                          <item.icon className="size-4" />
+                        </Link>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>{t(item.label)}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </DockIcon>
+                );
+              })}
           </Dock>
         </TooltipProvider>
         <TooltipProvider>
-          <Dock className={"rounded-full"} direction="middle">
+          <Dock className={"rounded-full bg-background bg-opacity-60 backdrop-blur-lg"} direction="middle">
             <DockIcon className={``}>
               <Tooltip>
                 <TooltipTrigger asChild>
