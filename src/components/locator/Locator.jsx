@@ -6,12 +6,12 @@ import L from "leaflet";
 import { useTranslations } from "next-intl";
 
 const mapData = {
-    lat:45.564470557633605,
-    lng: 12.301835837433977,
+    lat:45.56200979042744,
+    lng: 12.246667953262252,
     zoom: 17,
     name: 'storeLocator.label',
-    address: 'Via Don Giovanni Bosco, 30020 Marcon VE',
-    href: 'https://www.google.com/maps/place/Via+Don+Giovanni+Bosco,+30020+Marcon+VE/@45.5642976,12.2991845,17z/data=!3m1!4b1!4m6!3m5!1s0x47794c9e34569e4f:0xd9130b3f0974ec00!8m2!3d45.5642976!4d12.3017594!16s%2Fg%2F1tfwnsy5?coh=219816&entry=tts&g_ep=EgoyMDI0MDgxNC4xKgBIAVADhttps://www.google.com/maps/place/Via+Don+Giovanni+Bosco,+30020+Marcon+VE/@45.5642976,12.2991845,17z/data=!3m1!4b1!4m6!3m5!1s0x47794c9e34569e4f:0xd9130b3f0974ec00!8m2!3d45.5642976!4d12.3017594!16s%2Fg%2F1tfwnsy5?coh=219816&entry=tts&g_ep=EgoyMDI0MDgxNC4xKgBIAVAD',
+    address: 'Via Zermanesa 35 31021 Mogliano Veneto (TV)',
+    href: 'https://maps.app.goo.gl/dqmCfn6M5Q7ZEqqeA',
     directionText: 'map.visitUs',
     scrollWheelZoom: false,
 };
