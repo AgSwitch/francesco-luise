@@ -6,6 +6,8 @@ import { contacts } from "@/data/info";
 import { Separator } from "@radix-ui/react-separator";
 import { IoLogoWhatsapp, IoMdPin } from "react-icons/io";
 import Pill from "@/components/pill/Pill";
+import dynamic from "next/dynamic";
+const Locator = dynamic(() => import("@/components/locator/Locator") , { ssr: false });
 
 function Contacts(){
     const t = useTranslations("contacts");
@@ -70,7 +72,8 @@ function Contacts(){
             />
           </div>
   
-          <CustomForm className={"w-full max-w-2xl"} />
+          <CustomForm className={"w-full max-w-3xl"} />
+        <Locator  className={'px-8 lg:px-0'} mapStyle={'rounded-2xl max-w-3xl'}/>
         </section>
     )
   }

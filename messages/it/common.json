@@ -1,10 +1,10 @@
 {
   "navbar": {
     "home": "Home",
-    "contact": "Contatto",
+    "contact": "Contatti",
     "services": "Servizi",
     "blog": "Blog",
-    "aboutme": "Chi sono"
+    "aboutme": "Chi Sono"
   },
   "hero": {
     "title": "Dott. Francesco Luise",
@@ -12,36 +12,36 @@
   },
   "services": {
     "title": "Servizi",
-    "button": "Scopri di più",
+    "button": "Vedi Tutti",
     "pills": {
       "assistance": {
-        "title": "Assistenza continua",
-        "description": "L'assistenza continua è parte integrante del mio approccio volto al trattamento di tutto il corpo, e non solo del problema isolato. Questo servizio è fondamentale per assicurare ai miei pazienti salute e benessere duraturi."
+        "title": "Assistenza Continua",
+        "description": "L'assistenza continua è parte integrante del mio approccio volto a trattare il corpo nel suo insieme, non solo il problema isolato. Questo servizio è essenziale per garantire la salute e il benessere a lungo termine dei miei pazienti."
       },
       "therapy": {
-        "title": "Trattamento e terapia",
-        "description": "Cerco di capire la radice del tuo problema, per poterti fornire il trattamento più efficiente. Negli anni, ho scoperto che il trattamento e la terapia sono elementi fondamentali nel processo di recupero."
+        "title": "Trattamento e Terapia",
+        "description": "Mi impegno a capire la radice del tuo problema per offrirti il trattamento più efficace. Nel corso degli anni ho scoperto che il trattamento e la terapia sono elementi fondamentali nel processo di recupero."
       },
       "health": {
-        "title": "Valutazione e diagnosi",
-        "description": "Ascolto la tua storia e creo una cartella dettagliata. Elaboro poi un piano di trattamento personalizzato che includa la valutazione e la diagnosi, volto a ottenere i risultati funzionali che ci siamo posti insieme."
+        "title": "Valutazione e Diagnosi",
+        "description": "Ascolto la tua storia e creo un dossier dettagliato. Successivamente sviluppo un piano di trattamento personalizzato che include valutazione e diagnosi, mirato a raggiungere i risultati funzionali che abbiamo stabilito insieme."
       }
     },
-    "whatsapp": "Sono banana only Ema?"
+    "whatsapp": "Contattami su WhatsApp"
   },
   "aboutme": {
-    "title": "Chi sono",
-    "description": "Sono un dott. Luise Francesco, fisioterapista. Ho scoperto nel mio lavoro il modo migliore per trattare i miei pazienti, volto a garantire la salute e la benessere dei loro corpi.",
+    "title": "Chi Sono",
+    "description": "Il Dott. Francesco Luise è un fisioterapista rinomato con una passione per aiutare le persone a raggiungere i propri obiettivi. È un professionista certificato con una specializzazione in fisioterapia sportiva e un membro del Consiglio Nazionale dei Fisioterapisti.",
     "education": {
       "degree": {
         "year": "2019",
         "title": "Laurea in Fisioterapia",
-        "institution": "Università degli Studi di Padova"
+        "institution": "Università di Padova"
       },
       "firstwork": {
         "year": "2020",
         "title": "Fisioterapista",
-        "institution": "Studi specializzati a Mogliano Veneto (TV) e Mestre (VE)"
+        "institution": "Cliniche specializzate a Mogliano Veneto (TV) e Mestre (VE)"
       },
       "master": {
         "year": "2022",
@@ -53,30 +53,33 @@
   "contacts": {
     "title": "Contatti",
     "button": "Invia",
-    "or": "o",
+    "or": "oppure",
     "form": {
       "name": {
         "label": "Nome",
-        "error": "Scrivi il tuo nome"
+        "error": "Il nome deve contenere almeno 2 caratteri."
       },
       "email": {
         "label": "Email",
-        "error": "Scrivi la tua email valida"
+        "error": "Inserisci un indirizzo email valido."
       },
       "phone": {
         "label": "Telefono",
-        "error": "Scrivi il tuo numero di telefono valido"
+        "error": "Inserisci un numero di telefono valido."
       },
       "message": {
         "label": "Messaggio",
-        "error": "Scrivi il tuo messaggio"
+        "error": "Inserisci il tuo messaggio."
       }
     },
     "calendly": {
-              "title":"Prenota ora"
-            },
-            "whatsapp":"Sono banana only Ema?"
-        
+      "title": "Prenota ora"
+    },
+    "whatsapp": "Ciao Dott. Francesco Luise, vorrei avere maggiori informazioni riguardo i vostri servizi di fisioterapia. Potremmo fissare un appuntamento?",
+  "storeLocator": {
+    "label": "Francesco Luise Fisioterapista",
+    "hrefLabel": "vedi su google maps" 
+  }
   },
   "blog": {
     "title": "Blog",
@@ -84,6 +87,11 @@
   },
   "footer": {
     "vat": "Partita IVA",
-    "register": "Albo"
+    "register": "Registro Imprese"
+  },
+  "blogPage": {
+    "title": "Blog",
+    "subtitle": "Il mio blog sul benessere",
+    "button": "Vedi altro"
   }
 }

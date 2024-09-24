@@ -22,7 +22,7 @@ export function CustomForm({ className }) {
 
     async function onSubmit(values) {
         try {
-            const response = await fetch('/send', {
+            const response = await fetch('api/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ export function CustomForm({ className }) {
                         );
                     })}
                     <CustomButton
-                        className="text-xl rounded-3xl mx-auto col-span-2"
+                        className="text-base rounded-3xl mx-auto col-span-2"
                         type="submit"
                     >
                         Submit

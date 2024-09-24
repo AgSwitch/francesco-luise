@@ -1,37 +1,37 @@
 {
-    "navbar": {
-        "home": "Home",
-        "contact": "Contact",
-        "services": "Services",
+  "navbar": {
+    "home": "Home",
+    "contact": "Contact",
+    "services": "Services",
     "blog": "Blog",
     "aboutme": "About Me"
+  },
+  "hero": {
+    "title": "Dr. Francesco Luise",
+    "description": "Physiotherapist"
+  },
+  "services": {
+    "title": "Services",
+    "button": "View All",
+    "pills": {
+      "assistance": {
+        "title": "Continuous Assistance",
+        "description": "Continuous assistance is an integral part of my approach aimed at treating the body as a whole, not just the isolated problem. This service is essential to ensuring my patients' long-term health and well-being."
+      },
+      "therapy": {
+        "title": "Treatment and Therapy",
+        "description": "I strive to understand the root of your problem to provide you with the most effective treatment. Over the years, I have found that treatment and therapy are fundamental elements in the recovery process."
+      },
+      "health": {
+        "title": "Assessment and Diagnosis",
+        "description": "I listen to your story and create a detailed file. I then develop a personalized treatment plan that includes assessment and diagnosis, aimed at achieving the functional results we have set together."
+      }
     },
-    "hero": {
-        "title":  "Dr. Francesco Luise",
-        "description": "Physiotherapist"
-    },
-    "services": {
-        "title": "Services",
-        "button": "View All",
-        "pills": {
-            "assistance": {
-                "title": "Continuous Assistance",
-                "description": "Continuous assistance is an integral part of my approach aimed at treating the whole body, not just the isolated problem. This service is essential to ensuring my patients' long-term health and well-being."
-            },
-            "therapy": {
-                "title": "Treatment and Therapy",
-                "description": "I strive to understand the root of your problem to provide you with the most effective treatment. Over the years, I have found that treatment and therapy are fundamental elements in the recovery process."
-            },
-            "health": {
-                "title": "Assessment and Diagnosis",
-                "description": "I listen to your story and create a detailed file. I then develop a personalized treatment plan that includes assessment and diagnosis, aimed at achieving the functional results we have set together."
-            }
-        },
-        "whatsapp": "I'm banana solo Ema?"
-    },
+    "whatsapp": "Contact me on WhatsApp"
+  },
   "aboutme": {
     "title": "About Me",
-    "description": "Dr. Francesco Luise is a renowned physiotherapist with a passion for helping people achieve their goals. She is a certified registered nurse anesthetist and a member of the American Board of Physiotherapy (ABPT).",
+    "description": "Dr. Francesco Luise is a renowned physiotherapist with a passion for helping people achieve their goals. He is a certified professional with a specialization in sports physiotherapy and a member of the National Board of Physiotherapists.",
     "education": {
       "degree": {
         "year": "2019",
@@ -50,41 +50,48 @@
       }
     }
   },
-
-    "contacts": {
-        "title": "Contacts",
-        "button": "Submit",
-        "or": "or",
-        "form": {
-            "name": {
-                "label": "Name",
-                "error": "Name must be at least 2 characters."
-            },
-            "email": {
-                "label": "Email",
-                "error": "Please enter a valid email address"
-            },
-            "phone": {
-                "label": "Phone",
-                "error": "Please enter a valid phone number"
-            },
-            "message": {
-                "label": "Message",
-                "error": "Please enter your message"
-            }
-        },
-        "calendly": {
-              "title":"Book now"
-            },
-
-            "whatsapp":"I'm banana solo Ema?"
-    },
-    "blog": {
-        "title": "Blog",
-        "button": "Read More"
+  "contacts": {
+    "title": "Contacts",
+    "button": "Submit",
+    "or": "or",
+    "form": {
+      "name": {
+        "label": "Name",
+        "error": "Name must be at least 2 characters."
       },
-    "footer": {
-        "vat": "VAT Number",
-        "register": "Register"
+      "email": {
+        "label": "Email",
+        "error": "Please enter a valid email address."
+      },
+      "phone": {
+        "label": "Phone",
+        "error": "Please enter a valid phone number."
+      },
+      "message": {
+        "label": "Message",
+        "error": "Please enter your message."
+      }
+    },
+    "calendly": {
+      "title": "Book now"
+    },
+    "whatsapp": "Hello Dr. Francesco Luise, I would like to get more information about your physiotherapy services. Can we schedule an appointment?",
+    "storeLocator": {
+      "label": "Francesco Luise Phisioterapist",
+      "hrefLabel": "view on google maps" 
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "button": "Read More"
+  },
+  "footer": {
+    "vat": "VAT Number",
+    "register": "Company Register"
+  },
+  "blogPage": {
+    "title": "Blog",
+    "subtitle": "My Wellness Blog",
+    "button": "See More"
+  }
 }
