@@ -1,15 +1,28 @@
-const UseSetConfig = async (config, isActive) => {
-    try {
-        const res = await fetch(`http://localhost:3000/api/preferences?config=${config}&isActive=${isActive}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
-        const data = await res.json();
-        return data;
-    } catch (error) {
-        return error;
+import { useEffect, useState } from 'react';
+import { toast } from 'sonner';
+
+const useSetConfig = (config) => {
+    const [message, setMessage] = useState('');
+
+    async function setConfig(isActive) {
+        try {
+            const res = await fetch(
+                `/api/preferences?config=${config}&isActive=${isActive}`,
+                {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                },
+            );
+            const data = await res.json();
+            setMessage(data.message);
+            toast.success(message);
+        } catch (error) {
+            setMessage(error.message);
+            toast.error(message);
+        }
     }
-}
-export default UseSetConfig;
+    return { message, setConfig };
+};
+export default useSetConfig;

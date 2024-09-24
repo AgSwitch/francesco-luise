@@ -7,13 +7,13 @@ import { Input } from '@/components/ui/input';
 import { Switch } from '@/components/ui/switch';
 import withAuth from '@/hoc/withAuth';
 import useGetBlogPosts from '@/hooks/useGetBlogPosts';
-import UseGetConfig from '@/hooks/useGetConfig';
-import UseSetConfig from '@/hooks/useSetConfig';
+import useGetConfig from '@/hooks/useGetConfig';
+import useSetConfig from '@/hooks/useSetConfig';
 import { auth } from '@/lib/firebaseConfig';
 import { use } from 'i18next';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { get } from 'react-hook-form';
+import { get, set } from 'react-hook-form';
 import {
     MdAccountCircle,
     MdArrowCircleRight,
@@ -25,17 +25,13 @@ import { toast, Toaster } from 'sonner';
 const PageDashboard = () => {
     const { lastBlogPosts, loading, error, refreshPosts } = useGetBlogPosts();
     const [accountOpen, setAccountOpen] = useState(false);
+    const calendly = useGetConfig('calendly');
 
     const [calendlyConfig, setCalendlyConfig] = useState(false);
-
     useEffect(() => {
-        async function getConfig() {
-            const config = await UseGetConfig('calendly');
-            setCalendlyConfig(config.data.isActive);
-        }
-
-        getConfig();
-    }, []);
+        setCalendlyConfig(calendly.data?.isActive);
+    }, [calendly]);
+    const { setConfig } = useSetConfig('calendly');
 
     const handleSignOut = () => {
         try {
@@ -105,7 +101,7 @@ const PageDashboard = () => {
                             id="calendly-config"
                             checked={calendlyConfig}
                             onClick={() => {
-                                UseSetConfig('calendly', !calendlyConfig);
+                                setConfig(!calendlyConfig);
                                 setCalendlyConfig((prev) => !prev);
                             }}
                         />

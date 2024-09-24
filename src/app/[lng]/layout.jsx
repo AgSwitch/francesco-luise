@@ -8,7 +8,6 @@ import { availableLanguages } from '../../../global/languages';
 import Footer from '@/components/footer/Footer';
 import CalendlyPopup from '@/components/calendly/CalendlyPopup';
 import { Toaster } from 'sonner';
-import UseGetConfig from '@/hooks/useGetConfig';
 
 const lato = Lato({
     weight: ['100', '300', '400', '700', '900'],
@@ -43,8 +42,6 @@ export default async function RootLayout({ children, params: { lng } }) {
     unstable_setRequestLocale(lng);
 
     const messages = await getMessages(lng);
-    const calendly = await UseGetConfig('calendly');
-
 
     return (
         <html lang={lng} dir={dir(lng)}>
@@ -70,7 +67,7 @@ export default async function RootLayout({ children, params: { lng } }) {
                     <Navbar lng={lng} />
                     {children}
                     <Footer />
-                    {calendly.data.isActive && <CalendlyPopup lng={lng} />}
+                    <CalendlyPopup lng={lng} />
                 </NextIntlClientProvider>
             </body>
         </html>

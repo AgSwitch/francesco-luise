@@ -1,6 +1,5 @@
 import { Toaster } from 'sonner';
 import '../globals.css';
-import UseGetConfig from '@/hooks/useGetConfig';
 
 export const metadata = {
     title: 'Next.js',
