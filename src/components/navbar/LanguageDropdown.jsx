@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/tooltip";
 
 import { useState } from "react";
+import { locales } from "@/i18n";
 
 function LanguagesDropdown({ languages, lng }) {
   const [language, setLanguage] = useState(lng);
@@ -37,7 +38,7 @@ function LanguagesDropdown({ languages, lng }) {
           value={language}
           onValueChange={handleLanguageChange}
         >
-          {languages.map((lang) => (
+          {locales.map((lang) => (
             <Tooltip key={lang}>
               <TooltipTrigger asChild>
                 <DropdownMenuRadioItem value={lang}>

@@ -1,0 +1,98 @@
+{
+    "navbar": {
+      "home": "Inicio",
+      "contact": "Contactos",
+      "services": "Servicios",
+      "blog": "Blog",
+      "aboutme": "Quién Soy"
+    },
+    "hero": {
+      "title": "Dr. Francesco Luise",
+      "description": "Fisioterapeuta"
+    },
+    "services": {
+      "title": "Servicios",
+      "button": "Ver Todos",
+      "pills": {
+        "assistance": {
+          "title": "Asistencia Continua",
+          "description": "La asistencia continua es una parte integral de mi enfoque para tratar el cuerpo en su totalidad, no solo el problema aislado. Este servicio es esencial para garantizar la salud y el bienestar a largo plazo de mis pacientes."
+        },
+        "therapy": {
+          "title": "Tratamiento y Terapia",
+          "description": "Me comprometo a entender la raíz de tu problema para ofrecerte el tratamiento más efectivo. A lo largo de los años, he descubierto que el tratamiento y la terapia son elementos fundamentales en el proceso de recuperación."
+        },
+        "health": {
+          "title": "Evaluación y Diagnóstico",
+          "description": "Escucho tu historia y creo un expediente detallado. Luego, desarrollo un plan de tratamiento personalizado que incluye evaluación y diagnóstico, enfocado en lograr los resultados funcionales que hemos establecido juntos."
+        }
+      },
+      "whatsapp": "Contáctame por WhatsApp"
+    },
+    "aboutme": {
+      "title": "Quién Soy",
+      "description": "El Dr. Francesco Luise es un fisioterapeuta reconocido con una pasión por ayudar a las personas a alcanzar sus objetivos. Es un profesional certificado con especialización en fisioterapia deportiva y miembro del Consejo Nacional de Fisioterapeutas.",
+      "education": {
+        "degree": {
+          "year": "2019",
+          "title": "Licenciatura en Fisioterapia",
+          "institution": "Universidad de Padua"
+        },
+        "firstwork": {
+          "year": "2020",
+          "title": "Fisioterapeuta",
+          "institution": "Clínicas especializadas en Mogliano Veneto (TV) y Mestre (VE)"
+        },
+        "master": {
+          "year": "2022",
+          "title": "Máster en Fisioterapia Deportiva",
+          "institution": "Universidad de Pisa"
+        }
+      }
+    },
+    "contacts": {
+      "title": "Contactos",
+      "button": "Enviar",
+      "or": "o",
+      "form": {
+        "name": {
+          "label": "Nombre",
+          "error": "El nombre debe tener al menos 2 caracteres."
+        },
+        "email": {
+          "label": "Correo Electrónico",
+          "error": "Introduce una dirección de correo electrónico válida."
+        },
+        "phone": {
+          "label": "Teléfono",
+          "error": "Introduce un número de teléfono válido."
+        },
+        "message": {
+          "label": "Mensaje",
+          "error": "Introduce tu mensaje."
+        }
+      },
+      "calendly": {
+        "title": "Reserva ahora"
+      },
+      "whatsapp": "Hola Dr. Francesco Luise, me gustaría obtener más información sobre sus servicios de fisioterapia. ¿Podríamos fijar una cita?",
+    "storeLocator": {
+      "label": "Francesco Luise Fisioterapeuta",
+      "hrefLabel": "ver en google maps" 
+    }
+    },
+    "blog": {
+      "title": "Blog",
+      "button": "Leer más"
+    },
+    "footer": {
+      "vat": "Número de IVA",
+      "register": "Registro Venecia Padua Rovigo"
+    },
+    "blogPage": {
+      "title": "Blog",
+      "subtitle": "Mi blog sobre el bienestar",
+      "button": "Ver más"
+    }
+  }
+  

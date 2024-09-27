@@ -4,10 +4,10 @@ import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import { dir } from 'i18next';
 import '../globals.css';
 import { Lato } from 'next/font/google';
-import { availableLanguages } from '../../../global/languages';
 import Footer from '@/components/footer/Footer';
 import CalendlyPopup from '@/components/calendly/CalendlyPopup';
 import { Toaster } from 'sonner';
+import { locales } from '@/i18n';
 
 const lato = Lato({
     weight: ['100', '300', '400', '700', '900'],
@@ -35,7 +35,7 @@ export async function generateMetadata({ params: { lng } }) {
 }
 
 export async function generateStaticParams() {
-    return availableLanguages.map((lng) => ({ lng }));
+    return locales.map((lng) => ({ lng }));
 }
 
 export default async function RootLayout({ children, params: { lng } }) {
