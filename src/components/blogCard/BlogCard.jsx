@@ -4,16 +4,17 @@ import Link from "next/link";
 function BlogCard({ index, post, lng }) {
   return (
     <div
-      className={`py-20 grid md:grid-cols-2 min-h-full gap-8 px-8 w-screen ${
+      className={`py-20 grid md:grid-cols-2 min-h-full gap-8 px-8 w-full ${
         index % 2 === 0 ? "bg-background" : "bg-secondary"
       }`}
     >
       <div className="flex flex-col gap-6 md:p-20">
         <div>
           <h3 className="text-xl md:text-2xl font-bold">{post.title}</h3>
-          <h4 className="text-lg md:text-xl font-semibold">{post.desc}</h4>
+          <h4 className="text-lg md:text-xl pt-4">{post.desc}</h4>
         </div>
         <Link
+        className="underline"
           href={`/${lng}/blog/${post.slug}`}
         >
           Leggi di più
