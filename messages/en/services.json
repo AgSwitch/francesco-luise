@@ -1,93 +1,195 @@
 {
-    "service_page": {
-      "title": "Physiotherapy Services",
-      "main_subtitle": "Enhance your health and well-being with our personalized treatments",
-      "services": [
-        {
-          "service_title": "Physiotherapy Assessment",
-          "service_subtitle": "Comprehensive analysis for a tailored treatment",
-          "description": "An in-depth initial assessment to identify your specific needs and create a personalized treatment plan.",
-          "points": [
-            "Posture analysis",
-            "Mobility evaluation",
-            "Muscle and joint examination",
-            "Discussion of treatment goals"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Orthopedic Rehabilitation",
-          "service_subtitle": "Restore functionality after surgery or injury",
-          "description": "Specialized rehabilitation programs to help you regain strength, mobility, and functionality after surgeries or injuries.",
-          "points": [
-            "Post-operative recovery",
-            "Sports injury treatment",
-            "Mobility and strengthening exercises",
-            "Manual therapy techniques"
-          ],
-          "image": "https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg"
-        },
-        {
-          "service_title": "Manual Therapy",
-          "service_subtitle": "Pain relief and mobility enhancement",
-          "description": "Manual therapy techniques to alleviate pain, improve joint mobility, and promote overall well-being.",
-          "points": [
-            "Joint manipulations",
-            "Mobilizations",
-            "Therapeutic massage",
-            "Soft tissue treatment"
-          ],
-          "image": "https://images.pexels.com/photos/5794048/pexels-photo-5794048.jpeg"
-        },
-        {
-          "service_title": "Sports Physiotherapy",
-          "service_subtitle": "Optimize your performance and prevent injuries",
-          "description": "Physiotherapy services tailored for athletes, focusing on enhancing sports performance and preventing injuries.",
-          "points": [
-            "Biomechanical assessment",
-            "Personalized training plans",
-            "Treatment for acute and chronic injuries",
-            "Injury prevention counseling"
-          ],
-          "image": "https://images.pexels.com/photos/6798937/pexels-photo-6798937.jpeg"
-        },
-        {
-          "service_title": "Ultrasound Therapy",
-          "service_subtitle": "Advanced technology for faster recovery",
-          "description": "Use of high-frequency sound waves to treat muscle, tendon, and ligament injuries, promoting healing and reducing pain.",
-          "points": [
-            "Inflammation reduction",
-            "Tissue healing stimulation",
-            "Improvement of blood circulation",
-            "Painless application"
-          ],
-          "image": "https://images.pexels.com/photos/8313243/pexels-photo-8313243.jpeg"
-        },
-        {
-          "service_title": "Therapeutic Exercises",
-          "service_subtitle": "Exercise programs to improve strength and mobility",
-          "description": "Personalized exercise plans designed to enhance your strength, flexibility, and balance, accelerating recovery and preventing relapses.",
-          "points": [
-            "Muscle strengthening exercises",
-            "Stretching exercises",
-            "Balance and coordination programs",
-            "At-home rehabilitation exercises"
-          ],
-          "image": "https://images.pexels.com/photos/5793684/pexels-photo-5793684.jpeg"
-        },
-        {
-          "service_title": "TENS Therapy",
-          "service_subtitle": "Pain relief through electrical stimulation",
-          "description": "Non-invasive treatment to relieve pain through Transcutaneous Electrical Nerve Stimulation (TENS), ideal for chronic and acute conditions.",
-          "points": [
-            "Drug-free pain relief",
-            "Treatment of chronic and acute pain",
-            "Easy and safe application",
-            "Complementary to other treatments"
-          ],
-          "image": "https://images.pexels.com/photos/5793695/pexels-photo-5793695.jpeg"
-        }
-      ]
-    }
+  "service_page": {
+    "title": "Physiotherapy Services",
+    "main_subtitle": "Enhance your health and well-being with our personalized treatments",
+    "services": [
+      {
+        "service_title": "Functional Assessment",
+        "service_subtitle": "The starting point for a tailored treatment",
+        "description": "Through an analysis of posture, strength, and mobility, we identify critical areas to create a personalized treatment plan.",
+        "points": [
+          "Symptom analysis",
+          "Specific strength and mobility tests",
+          "Posture observation",
+          "Creation of a personalized treatment plan"
+        ],
+        "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
+      },
+      {
+        "service_title": "In-Clinic Physiotherapy Treatment",
+        "service_subtitle": "Tailor-made personalized treatments",
+        "description": "We offer customized treatments that include manual therapy, postural assessment, massage therapy, and much more.",
+        "points": [
+          "Manual therapy",
+          "Postural assessment",
+          "Pre and post-operative care",
+          "Therapeutic exercises",
+          "Kinesio-taping",
+          "Massage therapy",
+          "Joint and spinal mobilizations",
+          "Fibrolisis and Graston Technique",
+          "Articular pompage",
+          "Functional rehabilitation",
+          "Functional bandaging",
+          "Maintenance physiotherapy for the elderly"
+        ],
+        "image": "https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg"
+      },
+      {
+        "service_title": "Home Physiotherapy Treatment",
+        "service_subtitle": "Treatment in the comfort of your home",
+        "description": "Comprehensive physiotherapy services at home for those who prefer treatment at their residence.",
+        "points": [
+          "Manual therapy at home",
+          "Flexible scheduling",
+          "Complete treatment with all necessary equipment"
+        ],
+        "image": "https://images.pexels.com/photos/5794048/pexels-photo-5794048.jpeg"
+      },
+      {
+        "service_title": "Manual Therapy",
+        "service_subtitle": "Relieve pain and improve mobility",
+        "description": "Manual techniques to enhance joint mobility and relieve pain through manipulations and mobilizations.",
+        "points": [
+          "Joint manipulations",
+          "Mobilizations",
+          "Myofascial techniques",
+          "Restoring muscular balance"
+        ],
+        "image": "https://images.pexels.com/photos/6798937/pexels-photo-6798937.jpeg"
+      },
+      {
+        "service_title": "Postural Assessment",
+        "service_subtitle": "In-depth posture analysis",
+        "description": "Evaluation of asymmetries and biomechanical alterations to identify causes of pain or dysfunction.",
+        "points": [
+          "Analysis of postural asymmetries",
+          "Specific measurements",
+          "Identification of pain causes",
+          "Personalized treatment plan"
+        ],
+        "image": "https://images.pexels.com/photos/8313243/pexels-photo-8313243.jpeg"
+      },
+      {
+        "service_title": "Pre and Post Operative Care",
+        "service_subtitle": "Optimal preparation and recovery",
+        "description": "Targeted approach to prepare you for surgery and for optimal post-operative recovery.",
+        "points": [
+          "Post-prosthesis recovery",
+          "Rehabilitation after spinal interventions",
+          "Post-operative pain management",
+          "Training in the use of aids"
+        ],
+        "image": "https://images.pexels.com/photos/5793684/pexels-photo-5793684.jpeg"
+      },
+      {
+        "service_title": "Therapeutic Exercises",
+        "service_subtitle": "Personalized exercise programs",
+        "description": "Exercises aimed at improving strength, mobility, and balance, accelerating recovery and preventing future injuries.",
+        "points": [
+          "Muscle strengthening",
+          "Stretching",
+          "Balance exercises",
+          "Joint mobilization"
+        ],
+        "image": "https://images.pexels.com/photos/5793695/pexels-photo-5793695.jpeg"
+      },
+      {
+        "service_title": "Kinesiotaping",
+        "service_subtitle": "Muscle and joint support",
+        "description": "Use of elastic adhesive tapes to support muscles and joints, improving movement and reducing pain.",
+        "points": [
+          "Pain reduction",
+          "Muscle support",
+          "Improved circulation",
+          "Injury prevention"
+        ],
+        "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
+      },
+      {
+        "service_title": "Massage Therapy",
+        "service_subtitle": "Relaxation and pain relief",
+        "description": "Massage techniques to reduce stress, improve circulation, and alleviate muscle pain.",
+        "points": [
+          "Stress reduction",
+          "Improved mobility",
+          "Pain alleviation",
+          "Deep relaxation"
+        ],
+        "image": "https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg"
+      },
+      {
+        "service_title": "Joint and Spinal Mobilizations",
+        "service_subtitle": "Restore movement and relieve pain",
+        "description": "Mobilization techniques aimed at improving mobility and reducing joint and muscle pain, restoring body functionality.",
+        "points": [
+          "Improved joint mobility",
+          "Muscle pain relief",
+          "Restoration of correct biomechanics",
+          "Injury prevention"
+        ],
+        "image": "https://images.pexels.com/photos/7578807/pexels-photo-7578807.jpeg"
+      },
+      {
+        "service_title": "Fibrolisis and Graston Technique",
+        "service_subtitle": "Advanced techniques for treating adhesions",
+        "description": "Manual treatments and specialized instruments to break down soft tissue adhesions, reduce pain, and improve mobility.",
+        "points": [
+          "Pain reduction",
+          "Scar treatment",
+          "Improved flexibility",
+          "Accelerated post-injury recovery"
+        ],
+        "image": "https://images.pexels.com/photos/5946022/pexels-photo-5946022.jpeg"
+      },
+      {
+        "service_title": "Articular Pompage",
+        "service_subtitle": "Gentle technique to improve mobility",
+        "description": "A gentle manual technique that uses rhythmic movements to relieve muscle tension and improve joint functionality.",
+        "points": [
+          "Improved range of motion",
+          "Muscle tension relaxation",
+          "Joint pain relief",
+          "Promotion of joint lubrication"
+        ],
+        "image": "https://images.pexels.com/photos/5999483/pexels-photo-5999483.jpeg"
+      },
+      {
+        "service_title": "Functional Rehabilitation",
+        "service_subtitle": "Recovery and improvement of functional abilities",
+        "description": "A personalized rehabilitation approach aimed at restoring physical functionality and improving quality of life.",
+        "points": [
+          "Improved muscle strength",
+          "Restoration of joint mobility",
+          "Injury prevention",
+          "Return to daily activities"
+        ],
+        "image": "https://images.pexels.com/photos/4587340/pexels-photo-4587340.jpeg"
+      },
+      {
+        "service_title": "Functional Bandaging",
+        "service_subtitle": "Support and stabilization without limiting mobility",
+        "description": "Application of adhesive bandages to provide support to muscles and joints, preventing injuries and facilitating recovery.",
+        "points": [
+          "Joint and muscle support",
+          "Pain alleviation",
+          "Stabilization during movement",
+          "Injury prevention"
+        ],
+        "image": "https://images.pexels.com/photos/6461431/pexels-photo-6461431.jpeg"
+      },
+      {
+        "service_title": "Maintenance Physiotherapy for the Elderly",
+        "service_subtitle": "Maintaining quality of life in seniors",
+        "description": "Physiotherapy programs to improve strength, mobility, and balance, preventing falls and disabilities in the elderly.",
+        "points": [
+          "Improved muscle strength",
+          "Increased flexibility",
+          "Promotion of balance",
+          "Pain reduction"
+        ],
+        "image": "https://images.pexels.com/photos/5794048/pexels-photo-5794048.jpeg"
+      }
+    ]
   }
-  
+}

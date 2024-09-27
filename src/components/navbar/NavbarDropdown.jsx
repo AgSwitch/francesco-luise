@@ -1,9 +1,9 @@
 import React, { forwardRef, useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
-import { availableLanguages } from '../../../global/languages';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { locales } from '@/i18n';
 
 const NavbarDropdown = forwardRef(({ lng }, ref) => {
     NavbarDropdown.displayName = 'NavbarDropdown';
@@ -56,12 +56,12 @@ const NavbarDropdown = forwardRef(({ lng }, ref) => {
             <div
                 className={`absolute border-slate-200 border-[1px] transition-all duration-300 ease-in-out transform ${
                     open
-                        ? 'opacity-100 visible block rounded-2xl w-full px-1 py-1 backdrop-blur-md backdrop-filter bg-white/30 translate-y-0 bottom-[-100px]'
+                        ? 'opacity-100 visible block rounded-2xl w-full px-1 py-1 backdrop-blur-md backdrop-filter bg-white/30 translate-y-0 bottom-[-150px]'
                         : 'opacity-0 invisible -translate-y-full w-full'
                 }`}
             >
                 <div className="flex flex-col gap-2">
-                    {availableLanguages.map((lang) => {
+                    {locales.map((lang) => {
                         return (
                             <Link
                                 href={`/${lang + cleanPath}`}

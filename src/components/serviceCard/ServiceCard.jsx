@@ -7,7 +7,7 @@ export function ServiceCard({ index }) {
     return (
         <div
             key={index}
-            className={`py-20 grid md:grid-cols-2 min-h-full gap-8 px-8 ${index % 2 === 0 ? "bg-background" : "bg-secondary"}`}
+            className={`py-20 grid xl:grid-cols-2 min-h-full gap-8 px-8 ${index % 2 === 0 ? "bg-background" : "bg-secondary"}`}
         >
             <div className="flex flex-col gap-6 md:p-20">
                 <div>
@@ -21,8 +21,8 @@ export function ServiceCard({ index }) {
                     ))}
                 </ul>
             </div>
-            <div className={`-order-1 ${index % 2 !== 0 && "md:order-1"} `}>
-                <div className="aspect-video relative p-20 rounded-2xl overflow-hidden">
+            <div className={`flex items-center justify-center -order-1 ${index % 2 !== 0 && "xl:order-1"} `}>
+                <div className="aspect-video w-full relative p-20 rounded-2xl overflow-hidden">
                     <Image
                         src={t(`${index}.image`)}
                         alt=""
