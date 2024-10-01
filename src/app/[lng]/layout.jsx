@@ -8,6 +8,7 @@ import Footer from '@/components/footer/Footer';
 import CalendlyPopup from '@/components/calendly/CalendlyPopup';
 import { Toaster } from 'sonner';
 import { locales } from '@/i18n';
+import Iubenda from '@/components/iubenda/Iubenda';
 
 const lato = Lato({
     weight: ['100', '300', '400', '700', '900'],
@@ -68,6 +69,7 @@ export default async function RootLayout({ children, params: { lng } }) {
                     {children}
                     <Footer />
                     <CalendlyPopup lng={lng} />
+                    <Iubenda />
                 </NextIntlClientProvider>
             </body>
         </html>

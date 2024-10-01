@@ -7,7 +7,6 @@ const useEditBlogPost = (slug) => {
 
     useEffect(() => {
         const fetchPost = async () => {
-            console.log(slug);
             if (slug) {
                 try {
                     const res = await fetch(`/api/posts/post?slug=${slug}`, {
