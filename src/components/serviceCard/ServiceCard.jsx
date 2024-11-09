@@ -26,6 +26,7 @@ export function ServiceCard({ index, className }) {
                         src={t(`${index}.image`)}
                         alt=""
                         fill
+                        priority
                         className="aspect-square" />
                 </div>
             </div>
