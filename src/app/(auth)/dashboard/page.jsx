@@ -39,7 +39,6 @@ const PageDashboard = () => {
             toast.success('Logged out');
         } catch (error) {
             toast.error('Error logging out');
-            console.log(error.code);
         }
     };
 

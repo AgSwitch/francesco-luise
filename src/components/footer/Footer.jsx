@@ -48,7 +48,7 @@ const Footer = () => {
                 <div className="flex gap-4">
                     <a
                         href="https://www.iubenda.com/privacy-policy/84646767"
-                        class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe "
+                        className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe "
                         title="Privacy Policy "
                     >
                         Privacy Policy
@@ -56,7 +56,7 @@ const Footer = () => {
                     <span>|</span>
                     <a
                         href="https://www.iubenda.com/privacy-policy/84646767/cookie-policy"
-                        class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe "
+                        className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe "
                         title="Cookie Policy "
                     >
                         Cookie Policy

@@ -1,196 +1,195 @@
 {
-    "service_page": {
-      "title": "Servicios de Fisioterapia",
-      "main_subtitle": "Mejora tu salud y bienestar con nuestros tratamientos personalizados",
-      "services": [
-        {
-          "service_title": "Evaluación Funcional",
-          "service_subtitle": "El punto de partida para un tratamiento a medida",
-          "description": "A través de un análisis de postura, fuerza y movilidad, identificamos las áreas críticas para crear un plan de tratamiento personalizado.",
-          "points": [
-            "Análisis de sintomatología",
-            "Pruebas específicas de fuerza y movilidad",
-            "Observación de la postura",
-            "Creación de un plan de tratamiento personalizado"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Tratamiento Fisioterapéutico en Clínica",
-          "service_subtitle": "Tratamientos personalizados a medida",
-          "description": "Ofrecemos tratamientos a medida que incluyen terapia manual, evaluación postural, masoterapia y mucho más.",
-          "points": [
-            "Terapia manual",
-            "Evaluación postural",
-            "Pre y post operatorio",
-            "Ejercicios terapéuticos",
-            "Kinesio-taping",
-            "Masoterapia",
-            "Movilizaciones articulares y vertebrales",
-            "Fibrolisis y Técnica Graston",
-            "Pompage articular",
-            "Reeducación funcional",
-            "Vendajes funcionales",
-            "Fisioterapia de mantenimiento para adultos mayores"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Tratamiento Fisioterapéutico a Domicilio",
-          "service_subtitle": "Tratamiento en la comodidad de tu hogar",
-          "description": "Servicios completos de fisioterapia a domicilio para quienes prefieren un tratamiento en casa.",
-          "points": [
-            "Terapia manual a domicilio",
-            "Flexibilidad de horarios",
-            "Tratamiento completo con todos los equipos necesarios"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Terapia Manual",
-          "service_subtitle": "Alivia el dolor y mejora la movilidad",
-          "description": "Técnicas manuales para mejorar la movilidad articular y aliviar el dolor a través de manipulaciones y movilizaciones.",
-          "points": [
-            "Manipulaciones articulares",
-            "Movilizaciones",
-            "Técnicas miofasciales",
-            "Restablecimiento del equilibrio muscular"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Evaluación Postural",
-          "service_subtitle": "Análisis profundo de la postura",
-          "description": "Evaluación de las asimetrías y alteraciones biomecánicas para identificar causas de dolor o disfunciones.",
-          "points": [
-            "Análisis de asimetrías posturales",
-            "Mediciones específicas",
-            "Identificación de causas de dolor",
-            "Plan de tratamiento personalizado"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Pre y Post Operatorio",
-          "service_subtitle": "Preparación y recuperación óptimas",
-          "description": "Enfoque dirigido para prepararte para una cirugía y para la recuperación óptima post-quirúrgica.",
-          "points": [
-            "Recuperación post-prótesis",
-            "Rehabilitación después de intervenciones espinales",
-            "Gestión del dolor postoperatorio",
-            "Entrenamiento en el uso de ayudas técnicas"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Ejercicios Terapéuticos",
-          "service_subtitle": "Programas de ejercicios personalizados",
-          "description": "Ejercicios dirigidos a mejorar la fuerza, movilidad y equilibrio, acelerando la recuperación y previniendo futuras lesiones.",
-          "points": [
-            "Fortalecimiento muscular",
-            "Estiramientos",
-            "Ejercicios de equilibrio",
-            "Movilización articular"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Kinesiotaping",
-          "service_subtitle": "Soporte muscular y articular",
-          "description": "Uso de cintas adhesivas elásticas para soportar músculos y articulaciones, mejorando el movimiento y reduciendo el dolor.",
-          "points": [
-            "Reducción del dolor",
-            "Soporte muscular",
-            "Mejora de la circulación",
-            "Prevención de lesiones"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Masoterapia",
-          "service_subtitle": "Relajación y alivio del dolor",
-          "description": "Técnicas de masaje para reducir el estrés, mejorar la circulación y aliviar el dolor muscular.",
-          "points": [
-            "Reducción del estrés",
-            "Mejora de la movilidad",
-            "Alivio del dolor",
-            "Relajación profunda"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Movilizaciones Articulares y Vertebrales",
-          "service_subtitle": "Restablece el movimiento y alivia el dolor",
-          "description": "Técnicas de movilización dirigidas a mejorar la movilidad y reducir el dolor articular y muscular, restableciendo la funcionalidad del cuerpo.",
-          "points": [
-            "Mejora de la movilidad articular",
-            "Alivio del dolor muscular",
-            "Restablecimiento de la biomecánica correcta",
-            "Prevención de futuras lesiones"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Fibrolisis y Técnica Graston",
-          "service_subtitle": "Técnicas avanzadas para el tratamiento de adherencias",
-          "description": "Tratamientos manuales y con instrumentos especializados para liberar las adherencias de los tejidos blandos, reducir el dolor y mejorar la movilidad.",
-          "points": [
-            "Reducción del dolor",
-            "Tratamiento de cicatrices",
-            "Mejora de la flexibilidad",
-            "Aceleración de la recuperación post-lesión"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Pompage Articular",
-          "service_subtitle": "Técnica suave para mejorar la movilidad",
-          "description": "Una técnica manual suave que utiliza movimientos rítmicos para aliviar tensiones musculares y mejorar la funcionalidad articular.",
-          "points": [
-            "Mejora del rango de movimiento",
-            "Relajación de tensiones musculares",
-            "Alivio del dolor articular",
-            "Promoción de la lubricación articular"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Reeducación Funcional",
-          "service_subtitle": "Recuperación y mejora de las capacidades funcionales",
-          "description": "Un enfoque personalizado de rehabilitación que busca restablecer la funcionalidad física y mejorar la calidad de vida.",
-          "points": [
-            "Mejora de la fuerza muscular",
-            "Restablecimiento de la movilidad articular",
-            "Prevención de lesiones",
-            "Retorno a las actividades diarias"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Vendajes Funcionales",
-          "service_subtitle": "Soporte y estabilización sin limitar la movilidad",
-          "description": "Aplicación de vendajes adhesivos para proporcionar soporte a músculos y articulaciones, previniendo lesiones y facilitando la recuperación.",
-          "points": [
-            "Soporte articular y muscular",
-            "Alivio del dolor",
-            "Estabilización durante el movimiento",
-            "Prevención de lesiones"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        },
-        {
-          "service_title": "Fisioterapia de Mantenimiento para Adultos Mayores",
-          "service_subtitle": "Mantenimiento de la calidad de vida en adultos mayores",
-          "description": "Programas de fisioterapia para mejorar la fuerza, movilidad y equilibrio, previniendo caídas y discapacidades en adultos mayores.",
-          "points": [
-            "Mejora de la fuerza muscular",
-            "Incremento de la flexibilidad",
-            "Promoción del equilibrio",
-            "Reducción del dolor"
-          ],
-          "image": "https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg"
-        }
-      ]
-    }
+  "service_page": {
+    "title": "Servicios de Fisioterapia",
+    "main_subtitle": "Mejora tu salud y bienestar con nuestros tratamientos personalizados",
+    "services": [
+      {
+        "service_title": "Evaluación Funcional",
+        "service_subtitle": "El punto de partida para un tratamiento a medida",
+        "description": "A través de un análisis de postura, fuerza y movilidad, identificamos las áreas críticas para crear un plan de tratamiento personalizado.",
+        "points": [
+          "Análisis de sintomatología",
+          "Pruebas específicas de fuerza y movilidad",
+          "Observación de la postura",
+          "Creación de un plan de tratamiento personalizado"
+        ],
+        "image": "/services/functional_assessment.webp"
+      },
+      {
+        "service_title": "Tratamiento Fisioterapéutico en Clínica",
+        "service_subtitle": "Tratamientos personalizados a medida",
+        "description": "Ofrecemos tratamientos a medida que incluyen terapia manual, evaluación postural, masoterapia y mucho más.",
+        "points": [
+          "Terapia manual",
+          "Evaluación postural",
+          "Pre y post operatorio",
+          "Ejercicios terapéuticos",
+          "Kinesio-taping",
+          "Masoterapia",
+          "Movilizaciones articulares y vertebrales",
+          "Fibrolisis y Técnica Graston",
+          "Pompage articular",
+          "Reeducación funcional",
+          "Vendajes funcionales",
+          "Fisioterapia de mantenimiento para adultos mayores"
+        ],
+        "image": "/services/in_clinic_physiotherapy_treatment.webp"
+      },
+      {
+        "service_title": "Tratamiento Fisioterapéutico a Domicilio",
+        "service_subtitle": "Tratamiento en la comodidad de tu hogar",
+        "description": "Servicios completos de fisioterapia a domicilio para quienes prefieren un tratamiento en casa.",
+        "points": [
+          "Terapia manual a domicilio",
+          "Flexibilidad de horarios",
+          "Tratamiento completo con todos los equipos necesarios"
+        ],
+        "image": "/services/home_physiotherapy_treatment.webp"
+      },
+      {
+        "service_title": "Terapia Manual",
+        "service_subtitle": "Alivia el dolor y mejora la movilidad",
+        "description": "Técnicas manuales para mejorar la movilidad articular y aliviar el dolor a través de manipulaciones y movilizaciones.",
+        "points": [
+          "Manipulaciones articulares",
+          "Movilizaciones",
+          "Técnicas miofasciales",
+          "Restablecimiento del equilibrio muscular"
+        ],
+        "image": "/services/manual_therapy.webp"
+      },
+      {
+        "service_title": "Evaluación Postural",
+        "service_subtitle": "Análisis profundo de la postura",
+        "description": "Evaluación de las asimetrías y alteraciones biomecánicas para identificar causas de dolor o disfunciones.",
+        "points": [
+          "Análisis de asimetrías posturales",
+          "Mediciones específicas",
+          "Identificación de causas de dolor",
+          "Plan de tratamiento personalizado"
+        ],
+        "image": "/services/postural_assessment.webp"
+      },
+      {
+        "service_title": "Pre y Post Operatorio",
+        "service_subtitle": "Preparación y recuperación óptimas",
+        "description": "Enfoque dirigido para prepararte para una cirugía y para la recuperación óptima post-quirúrgica.",
+        "points": [
+          "Recuperación post-prótesis",
+          "Rehabilitación después de intervenciones espinales",
+          "Gestión del dolor postoperatorio",
+          "Entrenamiento en el uso de ayudas técnicas"
+        ],
+        "image": "/services/pre_and_post_operative_care.webp"
+      },
+      {
+        "service_title": "Ejercicios Terapéuticos",
+        "service_subtitle": "Programas de ejercicios personalizados",
+        "description": "Ejercicios dirigidos a mejorar la fuerza, movilidad y equilibrio, acelerando la recuperación y previniendo futuras lesiones.",
+        "points": [
+          "Fortalecimiento muscular",
+          "Estiramientos",
+          "Ejercicios de equilibrio",
+          "Movilización articular"
+        ],
+        "image": "/services/therapeutic_exercises.webp"
+      },
+      {
+        "service_title": "Kinesiotaping",
+        "service_subtitle": "Soporte muscular y articular",
+        "description": "Uso de cintas adhesivas elásticas para soportar músculos y articulaciones, mejorando el movimiento y reduciendo el dolor.",
+        "points": [
+          "Reducción del dolor",
+          "Soporte muscular",
+          "Mejora de la circulación",
+          "Prevención de lesiones"
+        ],
+        "image": "/services/kinesiotaping.webp"
+      },
+      {
+        "service_title": "Masoterapia",
+        "service_subtitle": "Relajación y alivio del dolor",
+        "description": "Técnicas de masaje para reducir el estrés, mejorar la circulación y aliviar el dolor muscular.",
+        "points": [
+          "Reducción del estrés",
+          "Mejora de la movilidad",
+          "Alivio del dolor",
+          "Relajación profunda"
+        ],
+        "image": "/services/massage_therapy.webp"
+      },
+      {
+        "service_title": "Movilizaciones Articulares y Vertebrales",
+        "service_subtitle": "Restablece el movimiento y alivia el dolor",
+        "description": "Técnicas de movilización dirigidas a mejorar la movilidad y reducir el dolor articular y muscular, restableciendo la funcionalidad del cuerpo.",
+        "points": [
+          "Mejora de la movilidad articular",
+          "Alivio del dolor muscular",
+          "Restablecimiento de la biomecánica correcta",
+          "Prevención de futuras lesiones"
+        ],
+        "image": "/services/joint_and_spinal_mobilizations.webp"
+      },
+      {
+        "service_title": "Fibrolisis y Técnica Graston",
+        "service_subtitle": "Técnicas avanzadas para el tratamiento de adherencias",
+        "description": "Tratamientos manuales y con instrumentos especializados para liberar las adherencias de los tejidos blandos, reducir el dolor y mejorar la movilidad.",
+        "points": [
+          "Reducción del dolor",
+          "Tratamiento de cicatrices",
+          "Mejora de la flexibilidad",
+          "Aceleración de la recuperación post-lesión"
+        ],
+        "image": "/services/fibrolisis_and_graston_technique.webp"
+      },
+      {
+        "service_title": "Pompage Articular",
+        "service_subtitle": "Técnica suave para mejorar la movilidad",
+        "description": "Una técnica manual suave que utiliza movimientos rítmicos para aliviar tensiones musculares y mejorar la funcionalidad articular.",
+        "points": [
+          "Mejora del rango de movimiento",
+          "Relajación de tensiones musculares",
+          "Alivio del dolor articular",
+          "Promoción de la lubricación articular"
+        ],
+        "image": "/services/articular_pompage.webp"
+      },
+      {
+        "service_title": "Reeducación Funcional",
+        "service_subtitle": "Recuperación y mejora de las capacidades funcionales",
+        "description": "Un enfoque personalizado de rehabilitación que busca restablecer la funcionalidad física y mejorar la calidad de vida.",
+        "points": [
+          "Mejora de la fuerza muscular",
+          "Restablecimiento de la movilidad articular",
+          "Prevención de lesiones",
+          "Retorno a las actividades diarias"
+        ],
+        "image": "/services/functional_rehabilitation.webp"
+      },
+      {
+        "service_title": "Vendajes Funcionales",
+        "service_subtitle": "Soporte y estabilización sin limitar la movilidad",
+        "description": "Aplicación de vendajes adhesivos para proporcionar soporte a músculos y articulaciones, previniendo lesiones y facilitando la recuperación.",
+        "points": [
+          "Soporte articular y muscular",
+          "Alivio del dolor",
+          "Estabilización durante el movimiento",
+          "Prevención de lesiones"
+        ],
+        "image": "/services/functional_bandaging.webp"
+      },
+      {
+        "service_title": "Fisioterapia de Mantenimiento para Adultos Mayores",
+        "service_subtitle": "Mantenimiento de la calidad de vida en adultos mayores",
+        "description": "Programas de fisioterapia para mejorar la fuerza, movilidad y equilibrio, previniendo caídas y discapacidades en adultos mayores.",
+        "points": [
+          "Mejora de la fuerza muscular",
+          "Incremento de la flexibilidad",
+          "Promoción del equilibrio",
+          "Reducción del dolor"
+        ],
+        "image": "/services/maintenance_physiotherapy_for_the_elderly.webp"
+      }
+    ]
   }
-  
+}

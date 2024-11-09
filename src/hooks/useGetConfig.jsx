@@ -21,7 +21,6 @@ const useGetConfig = (config) => {
         }
         getConfig();
     }, [config]);
-    console.log(configStatus);
     return configStatus;
 };
 export default useGetConfig;

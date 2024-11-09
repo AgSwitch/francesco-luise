@@ -1,13 +1,12 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export function ServiceCard({ index }) {
+export function ServiceCard({ index, className }) {
     const t = useTranslations("service_page.services");
-
     return (
         <div
             key={index}
-            className={`py-20 grid xl:grid-cols-2 min-h-full gap-8 px-8 ${index % 2 === 0 ? "bg-background" : "bg-secondary"}`}
+            className={`py-20 grid xl:grid-cols-2 min-h-full gap-8 px-8 ${index % 2 === 0 ? "bg-background" : "bg-secondary"} ${className}`}
         >
             <div className="flex flex-col gap-6 md:p-20">
                 <div>
@@ -27,6 +26,7 @@ export function ServiceCard({ index }) {
                         src={t(`${index}.image`)}
                         alt=""
                         fill
+                        priority
                         className="aspect-square" />
                 </div>
             </div>
