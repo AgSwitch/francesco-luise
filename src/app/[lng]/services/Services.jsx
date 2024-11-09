@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import { useTranslations } from "next-intl";
 import { ServiceCard } from "../../../components/serviceCard/ServiceCard";
+import { ServiceAccordion } from "../../../components/serviceAccordion/ServiceAccordion";
 export async function generateMetadata({ params }) {
   const postTitle = await getPostTitle(params.slug);
 
@@ -20,11 +21,20 @@ const Services = () => {
     <main>
       <div className="flex justify-center flex-col items-center pt-32 text-center px-8">
         <h1 className="text-3xl md:text-6xl font-bold">{t("title")}</h1>
-        <h2 className="text-xl md:text-3xl font-semibold">{t("main_subtitle")}</h2>
+        <h2 className="text-xl md:text-3xl font-semibold">
+          {t("main_subtitle")}
+        </h2>
       </div>
       <div>
         {services.map((_, index) => (
-          <ServiceCard key={index} index={index} />
+          <>
+            {index < 3 && <ServiceCard key={index} index={index} />}
+            {index >= 3 && (
+              <div>
+                <ServiceAccordion key={index} index={index} />
+              </div>
+            )}
+          </>
         ))}
       </div>
     </main>
@@ -32,5 +42,3 @@ const Services = () => {
 };
 
 export default Services;
-
-
