@@ -14,8 +14,6 @@ const CalendlyPopup = ({ lng }) => {
         setRootElement(document.body);
     }, []);
 
-    console.log('calendlyConfig', calendlyConfig);
-
     if (!calendlyConfig.data?.isActive) {
         return null;
     }

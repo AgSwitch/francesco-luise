@@ -22,10 +22,8 @@ export async function PUT(request) {
     const isActive = searchParams.get('isActive');
     const config = searchParams.get('config');
 
-    console.log(isActive, config);
     const docRef = doc(db, "configs", config);
 
-    console.log(docRef);
     try {
         await updateDoc(docRef, {
             isActive: isActive === 'true' ? true : false
@@ -33,7 +31,6 @@ export async function PUT(request) {
 
         return NextResponse.json({ message: "Cofig updated Successfully"  }, { status: 200 });
     } catch (error) {
-        console.log(error);
         return NextResponse.json({ error: "Error updating document:" }, { status: 500 });
     }
 
