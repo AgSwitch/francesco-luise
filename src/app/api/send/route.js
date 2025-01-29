@@ -13,7 +13,7 @@ export async function POST(request) {
     const { data, error } = await
       resend.emails.send({
         from: 'FLuise Website <onboarding@resend.dev>',
-        to: ['costantiniemanuele96@gmail.com'],
+        to: ['fisiolu@outlook.it'],
         subject: 'Richiesta info dal sito',
         react: <EmailTemplate {...body} />,
         // react: EmailTemplate({  }),
