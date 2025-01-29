@@ -15,28 +15,28 @@
     "button": "Vedi Tutti",
     "pills": {
       "assistance": {
-        "title": "Assistenza Continua",
-        "description": "L'assistenza continua è parte integrante del mio approccio volto a trattare il corpo nel suo insieme, non solo il problema isolato. Questo servizio è essenziale per garantire la salute e il benessere a lungo termine dei miei pazienti."
+        "title": " Valutazione Funzionale",
+        "description": "Attraverso un'analisi della postura, della forza e della mobilità, identifichiamo le aree critiche per creare un percorso di trattamento personalizzato."
       },
       "therapy": {
-        "title": "Trattamento e Terapia",
-        "description": "Mi impegno a capire la radice del tuo problema per offrirti il trattamento più efficace. Nel corso degli anni ho scoperto che il trattamento e la terapia sono elementi fondamentali nel processo di recupero."
+        "title": "Trattamento Fisioterapico in Studio",
+        "description": "Trattamenti su misura che includono terapia manuale, valutazione posturale, massoterapia e molto altro."
       },
       "health": {
-        "title": "Valutazione e Diagnosi",
-        "description": "Ascolto la tua storia e creo un dossier dettagliato. Successivamente sviluppo un piano di trattamento personalizzato che include valutazione e diagnosi, mirato a raggiungere i risultati funzionali che abbiamo stabilito insieme."
+        "title": "Trattamento Fisioterapico a Domicilio",
+        "description": "Servizi di fisioterapia completi a domicilio per chi preferisce un trattamento a casa."
       }
     },
     "whatsapp": "Contattami su WhatsApp"
   },
   "aboutme": {
     "title": "Chi Sono",
-    "description": "Il Dott. Francesco Luise è un fisioterapista rinomato con una passione per aiutare le persone a raggiungere i propri obiettivi. È un professionista certificato con una specializzazione in fisioterapia sportiva e un membro del Consiglio Nazionale dei Fisioterapisti.",
+    "description": "Sono il Dott. Luise Francesco, mi sono laureato in Fisioterapia presso l'Università degli Studi di Padova nel 2019, successivamente mi sono specializzato con un Master in Fisioterapia Sportiva. Offro trattamenti personalizzati per il recupero da infortuni, dolori muscoloscheletrici e problematiche posturali, utilizzando approcci scientifici e innovativi. Il mio obiettivo è aiutare ogni paziente a tornare al meglio della propria forma fisica, con un'attenzione particolare alla prevenzione e al miglioramento continuo del benessere.",
     "education": {
       "degree": {
         "year": "2019",
         "title": "Laurea in Fisioterapia",
-        "institution": "Università di Padova"
+        "institution": "Università degli Studi di Padova"
       },
       "firstwork": {
         "year": "2020",

@@ -1,97 +1,97 @@
 {
-  "navbar": {
-    "home": "Home",
-    "contact": "Contact",
-    "services": "Services",
-    "blog": "Blog",
-    "aboutme": "About Me"
-  },
-  "hero": {
-    "title": "Dr. Francesco Luise",
-    "description": "Physiotherapist"
-  },
-  "services": {
-    "title": "Services",
-    "button": "View All",
-    "pills": {
-      "assistance": {
-        "title": "Continuous Assistance",
-        "description": "Continuous assistance is an integral part of my approach aimed at treating the body as a whole, not just the isolated problem. This service is essential to ensuring my patients' long-term health and well-being."
-      },
-      "therapy": {
-        "title": "Treatment and Therapy",
-        "description": "I strive to understand the root of your problem to provide you with the most effective treatment. Over the years, I have found that treatment and therapy are fundamental elements in the recovery process."
-      },
-      "health": {
-        "title": "Assessment and Diagnosis",
-        "description": "I listen to your story and create a detailed file. I then develop a personalized treatment plan that includes assessment and diagnosis, aimed at achieving the functional results we have set together."
-      }
+    "navbar": {
+        "home": "Home",
+        "contact": "Contact",
+        "services": "Services",
+        "blog": "Blog",
+        "aboutme": "About Me"
     },
-    "whatsapp": "Contact me on WhatsApp"
-  },
-  "aboutme": {
-    "title": "About Me",
-    "description": "Dr. Francesco Luise is a renowned physiotherapist with a passion for helping people achieve their goals. He is a certified professional with a specialization in sports physiotherapy and a member of the National Board of Physiotherapists.",
-    "education": {
-      "degree": {
-        "year": "2019",
-        "title": "Degree in Physiotherapy",
-        "institution": "University of Padua"
-      },
-      "firstwork": {
-        "year": "2020",
-        "title": "Physiotherapist",
-        "institution": "Specialized clinics in Mogliano Veneto (TV) and Mestre (VE)"
-      },
-      "master": {
-        "year": "2022",
-        "title": "Master in Sports Physiotherapy",
-        "institution": "University of Pisa"
-      }
+    "hero": {
+        "title": "Dr. Francesco Luise",
+        "description": "Physiotherapist"
+    },
+    "services": {
+        "title": "Services",
+        "button": "See All",
+        "pills": {
+            "assistance": {
+                "title": "Functional Evaluation",
+                "description": "Through an analysis of posture, strength, and mobility, we identify critical areas to create a personalized treatment plan."
+            },
+            "therapy": {
+                "title": "In-Clinic Physiotherapy Treatment",
+                "description": "Tailored treatments including manual therapy, postural assessment, massage therapy, and more."
+            },
+            "health": {
+                "title": "Home Physiotherapy Treatment",
+                "description": "Complete physiotherapy services at home for those who prefer treatment at their place."
+            }
+        },
+        "whatsapp": "Contact me on WhatsApp"
+    },
+    "aboutme": {
+        "title": "About Me",
+        "description": "I am Dr. Francesco Luise, a Physiotherapist who graduated from the University of Padua in 2019. I later specialized with a Master's degree in Sports Physiotherapy. I offer personalized treatments for injury recovery, musculoskeletal pain, and postural issues, using scientific and innovative approaches. My goal is to help every patient return to their best physical condition, with a special focus on prevention and continuous well-being improvement.",
+        "education": {
+            "degree": {
+                "year": "2019",
+                "title": "Degree in Physiotherapy",
+                "institution": "University of Padua"
+            },
+            "firstwork": {
+                "year": "2020",
+                "title": "Physiotherapist",
+                "institution": "Specialized clinics in Mogliano Veneto (TV) and Mestre (VE)"
+            },
+            "master": {
+                "year": "2022",
+                "title": "Master in Sports Physiotherapy",
+                "institution": "University of Pisa"
+            }
+        }
+    },
+    "contacts": {
+        "title": "Contacts",
+        "button": "Submit",
+        "or": "or",
+        "form": {
+            "name": {
+                "label": "Name",
+                "error": "Name must be at least 2 characters."
+            },
+            "email": {
+                "label": "Email",
+                "error": "Please enter a valid email address."
+            },
+            "phone": {
+                "label": "Phone",
+                "error": "Please enter a valid phone number."
+            },
+            "message": {
+                "label": "Message",
+                "error": "Please enter your message."
+            }
+        },
+        "calendly": {
+            "title": "Book now"
+        },
+        "whatsapp": "Hello Dr. Francesco Luise, I would like to get more information about your physiotherapy services. Can we schedule an appointment?",
+        "storeLocator": {
+            "label": "Francesco Luise Phisioterapist",
+            "hrefLabel": "view on google maps"
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "button": "Read More"
+    },
+    "footer": {
+        "vat": "VAT Number",
+        "register": "Company Register"
+    },
+    "blogPage": {
+        "title": "Blog",
+        "subtitle": "My Wellness Blog",
+        "button": "See More"
     }
-  },
-  "contacts": {
-    "title": "Contacts",
-    "button": "Submit",
-    "or": "or",
-    "form": {
-      "name": {
-        "label": "Name",
-        "error": "Name must be at least 2 characters."
-      },
-      "email": {
-        "label": "Email",
-        "error": "Please enter a valid email address."
-      },
-      "phone": {
-        "label": "Phone",
-        "error": "Please enter a valid phone number."
-      },
-      "message": {
-        "label": "Message",
-        "error": "Please enter your message."
-      }
-    },
-    "calendly": {
-      "title": "Book now"
-    },
-    "whatsapp": "Hello Dr. Francesco Luise, I would like to get more information about your physiotherapy services. Can we schedule an appointment?",
-    "storeLocator": {
-      "label": "Francesco Luise Phisioterapist",
-      "hrefLabel": "view on google maps" 
-    }
-  },
-  "blog": {
-    "title": "Blog",
-    "button": "Read More"
-  },
-  "footer": {
-    "vat": "VAT Number",
-    "register": "Company Register"
-  },
-  "blogPage": {
-    "title": "Blog",
-    "subtitle": "My Wellness Blog",
-    "button": "See More"
-  }
 }
