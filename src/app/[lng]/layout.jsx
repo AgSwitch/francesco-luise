@@ -10,6 +10,8 @@ import { Toaster } from 'sonner';
 import { locales } from '@/i18n';
 import Iubenda from '@/components/iubenda/Iubenda';
 
+import { Analytics } from '@vercel/analytics/react';
+
 const lato = Lato({
     weight: ['100', '300', '400', '700', '900'],
     subsets: ['latin'],
@@ -70,6 +72,7 @@ export default async function RootLayout({ children, params: { lng } }) {
                     <Footer />
                     <CalendlyPopup lng={lng} />
                     <Iubenda />
+                    <Analytics />
                 </NextIntlClientProvider>
             </body>
         </html>
