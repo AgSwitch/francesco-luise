@@ -1,7 +1,7 @@
 'use client';
 import useGetConfig from '@/hooks/useGetConfig';
 import { useTranslations } from 'next-intl';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { PopupWidget } from 'react-calendly';
 
 const CalendlyPopup = ({ lng }) => {
@@ -22,8 +22,8 @@ const CalendlyPopup = ({ lng }) => {
             <PopupWidget
                 url={
                     lng === 'it'
-                        ? 'https://calendly.com/minimene/30min'
-                        : 'https://calendly.com/minimene/incontro-30-minuti-clone'
+                        ? 'https://calendly.com/francescoluise-info/45?month=2025-02'
+                        : 'https://calendly.com/francescoluise-info/45?month=2025-02'
                 }
                 rootElement={rootElement}
                 text={t('calendly.title')}
